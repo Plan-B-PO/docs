@@ -12,4 +12,4 @@
 ## Scenariusz alternatywny - Błąd walidacji pól
 6. System wyświetla komunikat o błędzie
 7. System wyświetla formularz dodania CR z zaznaczonymi błędnie wypełnionymi polami
-Powrót do kroku 3
+8. Powrót do kroku 3
