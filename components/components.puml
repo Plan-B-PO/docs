@@ -1,6 +1,7 @@
 @startuml
 
-!include https://raw.githubusercontent.com/PatrykCholewa/PlantUML-utils/master/utils.iuml
+skinparam componentStyle uml2
+skinparam monochrome true
 
 actor "App User" as AU
 actor Developer as AD
@@ -16,7 +17,18 @@ component "Launcher UI" as CLaU
 component Library as CLi
 component "Library UI" as CLiU
 component Logger as CLo
-component "Machine Manager" as CM
+component "Machine Manager" <<subsystem>> as SM {
+    component "Machines" as SMCM
+    component "Computations" as SMCC
+    interface " " as ISMCMSMCC
+    interface " " as ISMCCSMCM
+
+    SMCC -ri- ISMCCSMCM
+    SMCM -up-( ISMCCSMCM
+
+    SMCM -le- ISMCMSMCC
+    SMCC -ri-( ISMCMSMCC
+}
 component "Machine Manager UI" as CMU
 component Payments as CP
 component Machine as CMa
@@ -45,7 +57,7 @@ ICLiAD -le- CLi
 
 AS -up-> CMU
 CMU -up-( ICMAS
-ICMAS -le- CM
+ICMAS -up- SMCM
 
 AU -le-> CLaU
 CLaU -le-( ICLaAU
@@ -55,11 +67,11 @@ CLi -le- ICLiCLa
 ICLiCLa )-do- CLa
 
 CLa -do-( ICMCLa
-ICMCLa -do- CM
+ICMCLa -do- SMCC
 
-CM -do- ICMCMa
+SMCM -do- ICMCMa
 ICMCMa )-do- CMa
-CM -do-( ICMaCM
+SMCM -do-( ICMaCM
 ICMaCM -do- CMa
 
 CMa <-do- AS
@@ -68,7 +80,7 @@ CP -ri- ICPCLa
 ICPCLa )-ri- CLa
 
 CP -do- ICPCM
-CM -up-( ICPCM
+SMCC -up-( ICPCM
 
 CLa -do-> ICLoCLa
 ICLoCLa -do- CLo
@@ -76,7 +88,7 @@ CLo -do- ICLoCMa
 ICLoCMa <-do- CMa
 
 CQ -le- ICQ
-CM -do-( ICQ
+SMCC -do-( ICQ
 CMa -ri-( ICQ
 
 @enduml
