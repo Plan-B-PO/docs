@@ -1,0 +1,37 @@
+@startuml
+Downloader -- Launcher
+CTManager -- Launcher
+AppInfo "0...*" --o "1" Launcher
+
+skinparam classAttributeIconSize 0
+class Downloader { 
+- downloadAppData(string url): List<AppInfo>
++ AppDictionary dictionary
+}
+
+class CTManager {
++ saveCT(string json)
++ validate(string json): bool
++ createCT(string json, AppInfo application): string
+}
+
+class AppInfo {
+- string id
+- string name
+- string description
+- string icon
++ getID(): string
++ getName(): string
++ getDescription(): string
++ getIcon(): string
+}
+
+class Launcher {
++ string UserID
++ string Username
++ List<AppInfo> UserApps
++ getApplications() @endpoint : UserApps
++ getComputations() @endpoint
++ postComputations() @endpoint
+}
+@enduml
