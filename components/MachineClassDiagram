@@ -1,0 +1,53 @@
+@startuml
+Machine *-- CTInfo
+Machine *-- MachineStatus
+Machine *-- MachineResource
+Machine *-- CTResult
+
+skinparam classAttributeIconSize 0
+
+
+class CTInfo {
+- string id
+- string name
+- string description
+- string icon
+}
+
+
+class Machine {
++ string machineID
++ string name
++ Integer pid
++ CTInfo CTDescription
++ MachineStatus status
++ MachineResource resource
++ CTResult result
+
++ cancelMachineComputation() @endpoint : MachineStatus
++ activateMachineComputation() @endpoint : MachineStatus
++ getComputationResult @endpoint : CTResult
+}
+
+class MachineStatus {
++ time startTime
++ long runnigTime
++ boolean isRunning
+}
+
+class CTResult {
++ time startTime
++ time endTime
++ long runnigTime
++ File file 
+}
+
+class MachineResource {
++ string CPUs
++ string GPUs
++ string clockSpeed
++ localStorage memory
++ integer number
+}
+
+@enduml
