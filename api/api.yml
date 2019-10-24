@@ -119,6 +119,25 @@ paths:
             application/json:
               schema:
                   $ref: '#/components/schemas/ComputationApplication'
+  /library/launcher/applications/{id}/schema:
+    get:
+      tags:
+      - library
+      summary: get application schema
+      operationId: getApplicationSchema
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      responses:
+        '200':
+          description: application schema
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComputationApplicationSchema'
   /machine-manager/launcher/computations:
     post:
       tags:
@@ -477,6 +496,18 @@ components:
         icon:
           type: string
           example: https://imgur.com/exapmle
+    ComputationApplicationSchema:
+      type: object
+      required:
+      - id
+      properties:
+        id:
+          type: string
+          example: 2355252
+        schema:
+          type: array
+          items:
+            $ref: '#/components/schemas/ComputationStepParam'
     ComputationInput:
       type: object
       properties:
@@ -487,32 +518,32 @@ components:
           example: http://mylogger.com/log
     ComputationStepPackage:
       required:
-      - schema
       - computationSteps
+      - applicationId
       properties:
+        applicationId:
+          type: string
+          example: 2135144
         computationSteps:
           $ref: '#/components/schemas/ComputationStep'
         version:
           type: string
           example: 1.2.3-beta.4
-        schema:
-          type: array
-          items:
-            $ref: '#/components/schemas/ComputationStepParam'
-        command:
-          type: string
-          example: ./run.sh
     ComputationStep:
       required:
         - applicationId
-        - arfifactUrl
+        - command
       properties:
-        applicationId:
-          type: string
-          example: 2135144
+        params:
+          type: array
+          items:
+            $ref: '#/components/schemas/ComputationStepParam'
         artifactUrl:
           type: string
           example: library/applications/sample-app.zip
+        command:
+          type: string
+          example: ./run.sh
     ComputationStepParam:
       type: object
       required:

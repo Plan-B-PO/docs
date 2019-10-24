@@ -1,8 +1,13 @@
 @startuml
     title Model
 
+    hide class circle
+    hide class fields
+    hide class methods
+
     class ComputationTask
     class ComputationApplication
+    class ComputationApplicationSchema
     class ComputationInput
     class ComputationStep
     class ComputationStepPackage
@@ -16,6 +21,8 @@
 
     ComputationTask *-- ComputationApplication
     ComputationTask o-- ComputationInput
+    ComputationApplicationSchema ..> "1" ComputationApplication
+    ComputationApplicationSchema o-- "0..*" ComputationStepParam
     ComputationInput ..> ComputationApplication
     ComputationStepPackage *-- "1..*" ComputationStep
     ComputationStep o-- "0..*" ComputationStepParam
