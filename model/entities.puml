@@ -7,7 +7,6 @@
 
     class ComputationTask
     class ComputationApplication
-    class ComputationApplicationSchema
     class ComputationInput
     class ComputationStep
     class ComputationStepPackage
@@ -21,8 +20,7 @@
 
     ComputationTask *-- ComputationApplication
     ComputationTask o-- ComputationInput
-    ComputationApplicationSchema ..> "1" ComputationApplication
-    ComputationApplicationSchema o-- "0..*" ComputationStepParam
+    ComputationApplication o-- "0..*" ComputationStepParam
     ComputationInput ..> ComputationApplication
     ComputationStepPackage *-- "1..*" ComputationStep
     ComputationStep o-- "0..*" ComputationStepParam

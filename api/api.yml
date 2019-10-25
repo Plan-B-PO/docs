@@ -119,25 +119,6 @@ paths:
             application/json:
               schema:
                   $ref: '#/components/schemas/ComputationApplication'
-  /library/launcher/applications/{id}/schema:
-    get:
-      tags:
-      - library
-      summary: get application schema
-      operationId: getApplicationSchema
-      parameters:
-      - in: path
-        name: id
-        schema:
-          type: string
-        required: true
-      responses:
-        '200':
-          description: application schema
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ComputationApplicationSchema'
   /machine-manager/launcher/computations:
     post:
       tags:
@@ -496,14 +477,6 @@ components:
         icon:
           type: string
           example: https://imgur.com/exapmle
-    ComputationApplicationSchema:
-      type: object
-      required:
-      - id
-      properties:
-        id:
-          type: string
-          example: 2355252
         schema:
           type: array
           items:
