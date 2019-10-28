@@ -7,7 +7,7 @@
 ##### 1. __App User__ wybiera opcję wyświetlenia zdefiniowanych CT
 ##### 2. System wyświetla listę zdefiniowanych CT
 ##### 3. __App User__ wybiera opcję "Activate" przy zdefiniowanym CT
-##### 4. System wyśietla dane wejściowe CT.
+##### 4. System wyświetla dane wejściowe CT.
 ##### 5. __App User__ wybiera opcję "OK"
 ##### 6. System wyświetla informację o poprawnym uruchomieniu CT
 ##### 7. __App User__ wybiera opcję "OK"
