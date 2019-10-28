@@ -13,9 +13,13 @@
 ##### 7. __App User__ wypełnia formularz tworzenia CT
 ##### 8. __App User__ wybiera opcję "Create"
 ##### 9. System wyświetla informację o poprawnie utworzonym CT
-##### 10. __App User__ wybiera opcję "Zakończ"
+##### 10. __App User__ wybiera opcję "OK"
 ##### 11. System wyświetla listę CT 
 
-### 8a. __Użytkownik__ podał niepoprawne dane loggera.
+### 9a. __Użytkownik__ podał niepoprawne dane loggera.
 
-##### 7a1. GOTO 8 
+##### 9a1. GOTO 10 _(bez obsługi teraz, do wykorzystania później)_
+
+### 11a. __App User__ wybiera opcję "Activate"
+
+##### 11a1. _\<\<invokes\>\>_ UC4 Activate Computation Task 
