@@ -234,12 +234,35 @@ paths:
         '400':
           description: validation error
 
+  /machine-manager/machines:
+    post:
+      tags:
+      - machine manager
+      summary: initial machine register
+      operationId: bumpMachine
+      security:
+      - MachineAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MachineMetrics'
+      responses:
+        '201':
+          description: machine register successfull
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: 152623621625326
+
   /machine-manager/machines/status/{id}:
     post:
       tags:
       - machine manager
       summary: report machine metrics
-      operationId: bumpMachine
+      operationId: tokenRegisterMachine
       security:
       - MachineAuth: []
       parameters:
