@@ -239,7 +239,7 @@ paths:
       tags:
       - machine manager
       summary: initial machine register
-      operationId: bumpMachine
+      operationId: registerMachine
       security:
       - MachineAuth: []
       requestBody:
@@ -262,7 +262,7 @@ paths:
       tags:
       - machine manager
       summary: report machine metrics
-      operationId: tokenRegisterMachine
+      operationId: bumpMachine
       security:
       - MachineAuth: []
       parameters:
