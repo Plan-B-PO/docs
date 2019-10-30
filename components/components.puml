@@ -20,14 +20,10 @@ component Logger as CLo
 component "Machine Manager" <<subsystem>> as SM {
     component "Machines" as SMCM
     component "Computations" as SMCC
-    interface " " as ISMCMSMCC
-    interface " " as ISMCCSMCM
+    interface "Machines ZK" as ISMCCSMCM
 
     SMCC -ri- ISMCCSMCM
     SMCM -up-( ISMCCSMCM
-
-    SMCM -le- ISMCMSMCC
-    SMCC -ri-( ISMCMSMCC
 }
 component "Machine Manager UI" as CMU
 component Payments as CP
