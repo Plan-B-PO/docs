@@ -30,7 +30,7 @@
     logger = default
     ```
 8. __App User__ wybiera opcję "Create"
-9. System wyświetla informację o poprawnie utworzonym CT
+9. System wyświetla informację o poprawnie utworzonym CT o nazwie "My Test Task"
 10. __App User__ wybiera opcję "OK"
 
 ### Warunki sukcesu
