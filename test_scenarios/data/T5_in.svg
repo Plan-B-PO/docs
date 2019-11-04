@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="370px" preserveAspectRatio="none" style="width:1054px;height:370px;" version="1.1" viewBox="0 0 1054 370" width="1054px" zoomAndPan="magnify"><defs><filter height="300%" id="fhozgoexbqwr1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#fhozgoexbqwr1)" height="77.4063" style="stroke: #A80036; stroke-width: 1.5;" width="507" x="6" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="195" x="162" y="22.457">testApp03 : ComputationApplication</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="512" y1="27.0938" y2="27.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="51" x="12" y="41.4746">id = 10003</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="12" y="54.0527">name = "Test App 03"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="136" x="12" y="66.6309">description = "Loop test app"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="495" x="12" y="79.209">icon = "https://blog.hubspot.com/hs-fs/hub/53/file-23117129-png/blog/images/closed-loop-marketing.png"</text><rect fill="#FEFECE" filter="url(#fhozgoexbqwr1)" height="64.8281" style="stroke: #A80036; stroke-width: 1.5;" width="164" x="548.5" y="14"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="150" x="555.5" y="28.457">: ComputationStepPackage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="549.5" x2="711.5" y1="33.0938" y2="33.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="105" x="554.5" y="47.4746">applicationId = 10003</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="123" x="554.5" y="60.0527">computationSteps = [step]</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="68" x="554.5" y="72.6309">version: v1.0.0</text><rect fill="#FEFECE" filter="url(#fhozgoexbqwr1)" height="64.8281" style="stroke: #A80036; stroke-width: 1.5;" width="211" x="748" y="14"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="129" x="789" y="28.457">step : ComputationStep</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="749" x2="958" y1="33.0938" y2="33.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="52" x="768" y="47.4746">params = []</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="185" x="768" y="60.0527">artifactUrl = «app with an infinite loop»</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="756" y="67.0391"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="48" x="768" y="72.6309">command</text><rect fill="#FEFECE" filter="url(#fhozgoexbqwr1)" height="89.9844" style="stroke: #A80036; stroke-width: 1.5;" width="182" x="44.5" y="145"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="168" x="51.5" y="159.457">testTask03 : ComputationTask</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="45.5" x2="225.5" y1="164.0938" y2="164.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="51" x="50.5" y="178.4746">id = 20003</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="106" x="50.5" y="191.0527">name = "Test Task 03"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="70" x="50.5" y="203.6309">userId = 00001</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="113" x="50.5" y="216.209">application = testApp03</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="72" x="50.5" y="228.7871">input = input03</text><rect fill="#FEFECE" filter="url(#fhozgoexbqwr1)" height="39.6719" style="stroke: #A80036; stroke-width: 1.5;" width="162" x="54.5" y="307.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="148" x="61.5" y="321.957">input03 : ComputationInput</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="55.5" x2="215.5" y1="326.5938" y2="326.5938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="60" x="60.5" y="340.9746">logger = null</text><rect fill="#FEFECE" filter="url(#fhozgoexbqwr1)" height="89.9844" style="stroke: #A80036; stroke-width: 1.5;" width="182" x="261.5" y="145"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="168" x="268.5" y="159.457">testTask04 : ComputationTask</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="262.5" x2="442.5" y1="164.0938" y2="164.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="51" x="267.5" y="178.4746">id = 20004</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="106" x="267.5" y="191.0527">name = "Test Task 04"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="70" x="267.5" y="203.6309">userId = 00001</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="113" x="267.5" y="216.209">application = testApp03</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="72" x="267.5" y="228.7871">input = input04</text><rect fill="#FEFECE" filter="url(#fhozgoexbqwr1)" height="39.6719" style="stroke: #A80036; stroke-width: 1.5;" width="162" x="288.5" y="307.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="148" x="295.5" y="321.957">input04 : ComputationInput</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="289.5" x2="449.5" y1="326.5938" y2="326.5938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="60" x="294.5" y="340.9746">logger = null</text><rect fill="#FEFECE" filter="url(#fhozgoexbqwr1)" height="64.8281" style="stroke: #A80036; stroke-width: 1.5;" width="184" x="520.5" y="295"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="162" x="531.5" y="309.457">computation04 : Computation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="521.5" x2="703.5" y1="314.0938" y2="314.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="51" x="526.5" y="328.4746">id = 30004</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="172" x="526.5" y="341.0527">runnable = computation04Runnable</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="132" x="526.5" y="353.6309">input = computation04Input</text><rect fill="#FEFECE" filter="url(#fhozgoexbqwr1)" height="35.0938" style="stroke: #A80036; stroke-width: 1.5;" width="303" x="479" y="172.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="289" x="486" y="186.957">computation04Runnable : ComputationStepPackage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="480" x2="781" y1="191.5938" y2="191.5938"/><rect fill="#FEFECE" filter="url(#fhozgoexbqwr1)" height="35.0938" style="stroke: #A80036; stroke-width: 1.5;" width="226" x="817.5" y="172.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="212" x="824.5" y="186.957">runningStep : computation04Runnable</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="818.5" x2="1042.5" y1="191.5938" y2="191.5938"/><rect fill="#FEFECE" filter="url(#fhozgoexbqwr1)" height="52.25" style="stroke: #A80036; stroke-width: 1.5;" width="225" x="818" y="301.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="211" x="825" y="315.957">directRunning : ComputationRunnable</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="819" x2="1042" y1="320.5938" y2="320.5938"/><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="826" y="329.3828"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="9" x="838" y="334.9746">id</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="152" x="838" y="347.5527">computationStep = runningStep</text><!--link testApp03 to pack--><path d="M518.354,46.5 C528.377,46.5 538.399,46.5 548.421,46.5 " fill="none" id="testApp03-pack" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="513.113,46.5,522.113,50.5,518.113,46.5,522.113,42.5,513.113,46.5" style="stroke: #A80036; stroke-width: 1.0;"/><!--link pack to step--><path d="M726.007,46.5 C733.334,46.5 740.662,46.5 747.989,46.5 " fill="none" id="pack-step" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="712.818,46.5,718.818,50.5,724.818,46.5,718.818,42.5,712.818,46.5" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testApp03 to testTask03--><path d="M226.596,85.048 C213.227,100.304 197.524,118.223 182.956,134.847 " fill="none" id="testApp03-testTask03" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="174.063,144.994,181.0258,143.118,181.9721,135.9693,175.0093,137.8453,174.063,144.994" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testTask03 to input03--><path d="M135.5,248.575 C135.5,269.6316 135.5,292.0296 135.5,307.3825 " fill="none" id="testTask03-input03" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="135.5,235.368,131.5,241.368,135.5,247.368,139.5,241.368,135.5,235.368" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testApp03 to testTask04--><path d="M284.178,85.048 C294.016,100.016 305.538,117.548 316.289,133.904 " fill="none" id="testApp03-testTask04" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="323.578,144.994,323.6255,137.7831,316.9875,134.9658,316.94,142.1767,323.578,144.994" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testTask04 to input04--><path d="M359.686,248.276 C362.339,269.4191 365.166,291.9568 367.101,307.3825 " fill="none" id="testTask04-input04" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="358.066,235.368,354.8442,241.8193,359.5601,247.2746,362.7819,240.8233,358.066,235.368" style="stroke: #A80036; stroke-width: 1.0;"/><!--link pack to computation04Runnable--><path d="M630.5,99.279 C630.5,125.039 630.5,154.423 630.5,172.338 " fill="none" id="pack-computation04Runnable" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="623.5,99.255,630.5,79.255,637.5,99.255,623.5,99.255" style="stroke: #A80036; stroke-width: 1.0;"/><!--link computation04Runnable to computation04--><path d="M628.293,207.615 C625.858,225.945 621.837,256.215 618.462,281.6224 " fill="none" id="computation04Runnable-computation04" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="616.717,294.7527,621.4723,289.3317,618.2973,282.8572,613.542,288.2782,616.717,294.7527" style="stroke: #A80036; stroke-width: 1.0;"/><!--link input04 to computation04--><path d="M450.658,327.5 C469.492,327.5 488.326,327.5 507.161,327.5 " fill="none" id="input04-computation04" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="520.2,327.5,514.2,323.5,508.2,327.5,514.2,331.5,520.2,327.5" style="stroke: #A80036; stroke-width: 1.0;"/><!--link computation04Runnable to runningStep--><path d="M795.395,190 C802.694,190 809.993,190 817.292,190 " fill="none" id="computation04Runnable-runningStep" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="782.258,190,788.258,194,794.258,190,788.258,186,782.258,190" style="stroke: #A80036; stroke-width: 1.0;"/><!--link runningStep to directRunning--><path d="M930.5,207.615 C930.5,227.594 930.5,261.7581 930.5,288.3496 " fill="none" id="runningStep-directRunning" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="930.5,301.4498,934.5,295.4498,930.5,289.4498,926.5,295.4498,930.5,301.4498" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+
+object "testApp03 : ComputationApplication" as testApp03 {
+    id = 10003
+    name = "Test App 03"
+    description = "Loop test app"
+    icon = "https://blog.hubspot.com/hs-fs/hub/53/file-23117129-png/blog/images/closed-loop-marketing.png"
+}
+
+object ": ComputationStepPackage" as pack {
+    applicationId = 10003
+    computationSteps = [step]
+    version: v1.0.0
+}
+
+testApp03 <. pack
+
+object "step : ComputationStep" as step {
+    params = []
+    artifactUrl = <<app with an infinite loop>>
+    - command
+}
+
+pack *. step
+
+object "testTask03 : ComputationTask" as testTask03 {
+    id = 20003
+    name = "Test Task 03"
+    userId = 00001
+    application = testApp03
+    input = input03
+}
+
+object "input03 : ComputationInput" as input03 {
+    logger = null
+}
+
+testApp03 - -o testTask03
+testTask03 o- - input03
+
+object "testTask04 : ComputationTask" as testTask04 {
+    id = 20004
+    name = "Test Task 04"
+    userId = 00001
+    application = testApp03
+    input = input04
+}
+
+object "input04 : ComputationInput" as input04 {
+    logger = null
+}
+
+testApp03 - -o testTask04
+testTask04 o- - input04
+
+object "computation04 : Computation" as computation04 {
+    id = 30004
+    runnable = computation04Runnable
+    input = computation04Input
+}
+
+object "computation04Runnable : ComputationStepPackage" as computation04Runnable
+
+pack <|- - computation04Runnable
+computation04Runnable - -* computation04
+
+input04 -* computation04
+
+object "runningStep : computation04Runnable" as runningStep
+
+computation04Runnable *- runningStep
+
+object "directRunning : ComputationRunnable" as directRunning {
+    - id
+    computationStep = runningStep
+}
+
+runningStep - -* directRunning
+
+@enduml
+
+PlantUML version 1.2018.11(Sat Sep 22 18:43:53 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_152-release-1248-b8
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1250
+Language: pl
+Country: PL
+--></g></svg>

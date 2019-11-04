@@ -577,7 +577,6 @@ components:
       - id
       - runnable
       - logger
-      - input
       properties:
         id:
           type: string
@@ -587,9 +586,6 @@ components:
           example: 234565432
         runnable:
           $ref: '#/components/schemas/ComputationStepPackage'
-        logger:
-          type: string
-          example: https://my-domain.pl/log
         input:
           $ref: '#/components/schemas/ComputationInput'
     Machine:
