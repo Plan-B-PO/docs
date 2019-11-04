@@ -1,0 +1,10 @@
+@startuml
+
+object "testApp01 : ComputationApplication" as testApp01 {
+    id = 10001
+    name = "Test App 01"
+    description = "Nop test app"
+    icon = "http://blog.nop.ee/wp-content/uploads/2014/05/NOPiLogoPunaneRing-1.jpg"
+}
+
+@enduml
