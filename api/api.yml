@@ -614,6 +614,9 @@ components:
         id:
           type: string
           example: 13234
+        name:
+          type: string
+          example: testMachine
         supplierId: 
           type: string
           example: 12345643
