@@ -40,42 +40,4 @@ metrics --o gpus
 metrics --o memory
 metrics --o localStorage
 
-object "testApp01 : ComputationApplication" as testApp01 {
-    id = 10002
-    name = "Test App 01"
-    description = "Benchmark app"
-    icon = "http://www.todayifoundout.com/wp-content/uploads/2010/04/ok.gif"
-}
-
-object ": ComputationStepPackage" as pack {
-    applicationId = 10002
-    computationSteps = [step]
-    version: v1.0.0
-}
-
-testApp01 <. pack
-
-object "step : ComputationStep" as step {
-    params = []
-    artifactUrl = <<coplex calculcations>>
-    - command
-}
-
-pack *- step
-
-object "testTask01 : ComputationTask" as testTask01 {
-    id = 20001
-    name = "Test Task 01"
-    userId = 00001
-    application = testApp01
-    input = input01
-}
-
-object "input01 : ComputationInput" as input01 {
-    logger = null
-}
-
-testApp01 --o testTask01
-testTask01 o-- input01
-
 @enduml

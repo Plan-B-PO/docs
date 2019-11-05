@@ -15,7 +15,6 @@
 - Maszyna jest zarejestrowna w systemie
 - Klient działa na maszynie
 - Zalogowany __Supplier__ to _user01_.
-- Zalogowany __App User__ to _user02_.
 - Tylko jedna maszyna `Test Machine 01` (właścicielem jest _user01_) jest dostępna
 
 ### Przypadki testowe
@@ -35,10 +34,19 @@
         Memory: 10%
         Local Storage: 20%
     ```
-5. __App User__ uruchamia aplikację `testApp01`
-6. System wyświetla komunikat o poprawnym uruchomieniu aplikacji
-7. __Supplier__ wybiera `Test Machine 01`
-8. System wyświetla metryki maszyny:
+5. Uruchamiamy aplikację `testApp01` na `testMachine01`
+	```
+	POST testMachine01/computations
+	{
+      "computationStep": {
+        "params": [],
+        "artifactUrl": "http://kcybulski.me/hello.zip",
+        "command": "dd if=/dev/zero of=/dev/null"
+      }
+    }
+	```
+6. __Supplier__ wybiera `Test Machine 01`
+7. System wyświetla metryki maszyny:
    ```
        CPU: 20%
        GPU: 15%
