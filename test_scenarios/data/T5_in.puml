@@ -1,0 +1,80 @@
+@startuml
+
+object "testApp03 : ComputationApplication" as testApp03 {
+    id = 10003
+    name = "Test App 03"
+    description = "Loop test app"
+    icon = "https://blog.hubspot.com/hs-fs/hub/53/file-23117129-png/blog/images/closed-loop-marketing.png"
+}
+
+object ": ComputationStepPackage" as pack {
+    applicationId = 10003
+    computationSteps = [step]
+    version: v1.0.0
+}
+
+testApp03 <. pack
+
+object "step : ComputationStep" as step {
+    params = []
+    artifactUrl = <<app with an infinite loop>>
+    - command
+}
+
+pack *. step
+
+object "testTask03 : ComputationTask" as testTask03 {
+    id = 20003
+    name = "Test Task 03"
+    userId = 00001
+    application = testApp03
+    input = input03
+}
+
+object "input03 : ComputationInput" as input03 {
+    logger = null
+}
+
+testApp03 --o testTask03
+testTask03 o-- input03
+
+object "testTask04 : ComputationTask" as testTask04 {
+    id = 20004
+    name = "Test Task 04"
+    userId = 00001
+    application = testApp03
+    input = input04
+}
+
+object "input04 : ComputationInput" as input04 {
+    logger = null
+}
+
+testApp03 --o testTask04
+testTask04 o-- input04
+
+object "computation04 : Computation" as computation04 {
+    id = 30004
+    runnable = computation04Runnable
+    input = computation04Input
+}
+
+object "computation04Runnable : ComputationStepPackage" as computation04Runnable
+
+pack <|-- computation04Runnable
+computation04Runnable --* computation04
+
+input04 -* computation04
+
+object "runningStep : computation04Runnable" as runningStep
+
+computation04Runnable *- runningStep
+
+object "directRunning : ComputationRunnable" as directRunning {
+    - id
+    computationStep = runningStep
+}
+
+runningStep --* directRunning
+
+@enduml
