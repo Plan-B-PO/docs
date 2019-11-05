@@ -296,6 +296,22 @@ paths:
                 type: string
                 enum: [waiting, working]
 
+  /machine/computation:
+    post:
+      tags:
+      - machine
+      summary: run computation on machine
+      operationId: runMachineComputation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ComputationRunnable'
+      responses:
+        '201':
+          description: application ran successfully
+
   /machine/computation/{id}:
     get:
       tags:
@@ -317,26 +333,6 @@ paths:
                 $ref: '#/components/schemas/Computation'
         '404':
           description: no computation
-    post:
-      tags:
-      - machine
-      summary: run computation on machine
-      operationId: runMachineComputation
-      parameters:
-      - in: path
-        name: id
-        schema:
-          type: string
-        required: false
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/ComputationRunnable'
-      responses:
-        '201':
-          description: application ran successfully
     delete:
       tags:
       - machine
