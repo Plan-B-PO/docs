@@ -1,0 +1,17 @@
+@startuml
+
+object "myTestTask : ComputationTask" as myTestTask {
+    - id
+    + name = "My Test Task 2"
+    + userId = user01
+    + application = testApp01 : ComputationApplicaton
+    + input = myTestTaskInput : ComputationInput
+}
+
+object "myTestTaskInput : ComputationInput" as myTestTaskInput {
+    + logger = "https://my-logger.com/log"
+}
+
+myTestTaskInput -o myTestTask
+
+@enduml
