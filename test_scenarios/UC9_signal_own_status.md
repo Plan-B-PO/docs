@@ -6,6 +6,10 @@
 
 - [UC9](../scenarios/UC9_signal_own_status)
 
+### Dane początkowe
+
+![model](data/UC9_in.svg)
+
 ### Warunki początkowe 
 
 - Maszyna jest zarejestrowna w systemie
@@ -31,7 +35,7 @@
         Memory: 10%
         Local Storage: 20%
     ```
-5. __App User__ uruchamia aplikację z dowolnymi danymi
+5. __App User__ uruchamia aplikację `testApp01`
 6. System wyświetla komunikat o poprawnym uruchomieniu aplikacji
 7. __Supplier__ wybiera `Test Machine 01`
 8. System wyświetla metryki maszyny:

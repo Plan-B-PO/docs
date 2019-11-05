@@ -6,6 +6,10 @@
 
 - [UC8](../scenarios/UC8_Show%20owned%20CN%20list)
 
+### Dane początkowe
+
+![model](data/UC8_in.svg)
+
 ### Warunki początkowe 
 
 - Zalogowany __Supplier__ to _user01_.
@@ -18,7 +22,7 @@
 2. System wyświetla listę posiadanych CN - pokazując ich nazwy oraz statusy
     ```
     - "Test Machine 01 - online"
-    - "Test Machine 04 - offline since 2 days"
+    - "Test Machine 02 - offline since 2 days"
     ```
 
 ___WARUNEK SUKCESU:___

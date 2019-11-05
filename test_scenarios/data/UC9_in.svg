@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentScriptType="application/ecmascript" contentStyleType="text/css"
+		height="345px" preserveAspectRatio="none" style="width:1444px;height:345px;" version="1.1"
+		viewBox="0 0 1444 345" width="1444px" zoomAndPan="magnify"><defs><filter height="300%" id="f1swtpwqrqp7u" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#f1swtpwqrqp7u)" height="60.8906" style="stroke: #A80036; stroke-width: 1.5;" width="171" x="869.5" y="14"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="157" x="876.5" y="27.1387">testMachine01 : Machine</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="870.5" x2="1039.5" y1="31.9688" y2="31.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="103" x="875.5" y="45.251">id = "testMachine01"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="130" x="875.5" y="56.8916">name = "Test Machine 01"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="103" x="875.5" y="68.5322">supplierId = "user01"</text><rect fill="#FEFECE" filter="url(#f1swtpwqrqp7u)" height="72.5313" style="stroke: #A80036; stroke-width: 1.5;" width="117" x="896.5" y="146.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="103" x="903.5" y="159.6387">metrics : Metrics</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="897.5" x2="1012.5" y1="164.4688" y2="164.4688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="52" x="902.5" y="177.751">cpus = null</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="53" x="902.5" y="189.3916">gpus = null</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="72" x="902.5" y="201.0322">memory = null</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="90" x="902.5" y="212.6729">localStorage = null</text><rect fill="#FEFECE" filter="url(#f1swtpwqrqp7u)" height="49.25" style="stroke: #A80036; stroke-width: 1.5;" width="181" x="534.5" y="285"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="167" x="541.5" y="298.1387">cpus : MachineMetricValue</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="535.5" x2="714.5" y1="302.9688" y2="302.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="56" x="540.5" y="316.251">current: 0.0</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="43" x="540.5" y="327.8916">max: 8.0</text><rect fill="#FEFECE" filter="url(#f1swtpwqrqp7u)" height="49.25" style="stroke: #A80036; stroke-width: 1.5;" width="182" x="751" y="285"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="168" x="758" y="298.1387">gpus : MachineMetricValue</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="752" x2="932" y1="302.9688" y2="302.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="56" x="757" y="316.251">current: 0.0</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="43" x="757" y="327.8916">max: 4.0</text><rect fill="#FEFECE" filter="url(#f1swtpwqrqp7u)" height="49.25" style="stroke: #A80036; stroke-width: 1.5;" width="200" x="968" y="285"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="186" x="975" y="298.1387">memory : MachineMetricValue</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="969" x2="1167" y1="302.9688" y2="302.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="56" x="974" y="316.251">current: 0.0</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="49" x="974" y="327.8916">max: 32.0</text><rect fill="#FEFECE" filter="url(#f1swtpwqrqp7u)" height="49.25" style="stroke: #A80036; stroke-width: 1.5;" width="230" x="1203" y="285"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="216" x="1210" y="298.1387">localStorage : MachineMetricValue</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1204" x2="1432" y1="302.9688" y2="302.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="56" x="1209" y="316.251">current: 0.0</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="55" x="1209" y="327.8916">max: 128.0</text><rect fill="#FEFECE" filter="url(#f1swtpwqrqp7u)" height="72.5313" style="stroke: #A80036; stroke-width: 1.5;" width="378" x="6" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="226" x="82" y="21.1387">testApp01 : ComputationApplication</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="383" y1="25.9688" y2="25.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="52" x="12" y="39.251">id = 10002</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="109" x="12" y="50.8916">name = "Test App 01"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="152" x="12" y="62.5322">description = "Benchmark app"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="366" x="12" y="74.1729">icon = "http://www.todayifoundout.com/wp-content/uploads/2010/04/ok.gif"</text><rect fill="#FEFECE" filter="url(#f1swtpwqrqp7u)" height="60.8906" style="stroke: #A80036; stroke-width: 1.5;" width="185" x="419.5" y="14"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="171" x="426.5" y="27.1387">: ComputationStepPackage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="420.5" x2="603.5" y1="31.9688" y2="31.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="425.5" y="45.251">applicationId = 10002</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="132" x="425.5" y="56.8916">computationSteps = [step]</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="71" x="425.5" y="68.5322">version: v1.0.0</text><rect fill="#FEFECE" filter="url(#f1swtpwqrqp7u)" height="60.8906" style="stroke: #A80036; stroke-width: 1.5;" width="195" x="639.5" y="14"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="149" x="662.5" y="27.1387">step : ComputationStep</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="640.5" x2="833.5" y1="31.9688" y2="31.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="59" x="659.5" y="45.251">params = []</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="169" x="659.5" y="56.8916">artifactUrl = «coplex calculcations»</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="647.5" y="63.25"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="49" x="659.5" y="68.5322">command</text><rect fill="#FEFECE" filter="url(#f1swtpwqrqp7u)" height="84.1719" style="stroke: #A80036; stroke-width: 1.5;" width="205" x="92.5" y="141"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="191" x="99.5" y="154.1387">testTask01 : ComputationTask</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="93.5" x2="296.5" y1="158.9688" y2="158.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="52" x="98.5" y="172.251">id = 20001</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="111" x="98.5" y="183.8916">name = "Test Task 01"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="74" x="98.5" y="195.5322">userId = 00001</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="115" x="98.5" y="207.1729">application = testApp01</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="74" x="98.5" y="218.8135">input = input01</text><rect fill="#FEFECE" filter="url(#f1swtpwqrqp7u)" height="37.6094" style="stroke: #A80036; stroke-width: 1.5;" width="186" x="102" y="290.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="172" x="109" y="303.6387">input01 : ComputationInput</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="103" x2="287" y1="308.4688" y2="308.4688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="60" x="108" y="321.751">logger = null</text><!--MD5=[93dd3cf078baefbdec7e18c0a53d897e]
+link testMachine01 to metrics--><path d="M955,75.118 C955,91.983 955,113.541 955,132.872 " fill="none" id="testMachine01-&gt;metrics" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="955,146.133,959,140.133,955,134.133,951,140.133,955,146.133" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[23d41bd2c354db92419e67279af6f3e4]
+link metrics to cpus--><path d="M896.383,206.115 C841.569,226.794 759.45,257.7756 699.906,280.2399 " fill="none" id="metrics-&gt;cpus" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="687.561,284.8975,694.5867,286.5222,698.7886,280.6619,691.7629,279.0371,687.561,284.8975" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[1487f3635dfb38c6f0dfd59e397cee15]
+link metrics to gpus--><path d="M922.619,219.677 C906.956,236.933 888.25,257.5433 872.801,274.5645 " fill="none" id="metrics-&gt;gpus" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="863.659,284.6367,870.6534,282.8823,871.7242,275.7512,864.7297,277.5055,863.659,284.6367" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[662b96f997bb63bb1c22c5549f095d92]
+link metrics to memory--><path d="M987.381,219.677 C1003.044,236.933 1021.75,257.5433 1037.2,274.5645 " fill="none" id="metrics-&gt;memory" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1046.34,284.6367,1045.2703,277.5054,1038.2761,275.75,1039.3458,282.8813,1046.34,284.6367" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[45296e734d22fda92f4da286c3758751]
+link metrics to localStorage--><path d="M1013.73,204.141 C1074.36,224.938 1169.42,257.54 1237.14,280.7667 " fill="none" id="metrics-&gt;localStorage" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1249.45,284.9896,1245.0709,279.2604,1238.0981,281.0992,1242.4773,286.8283,1249.45,284.9896" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[5ff6c71fba25a9012a2d676c60b44648]
+reverse link testApp01 to pack--><path d="M389.337,44.5 C399.26,44.5 409.184,44.5 419.107,44.5 " fill="none" id="testApp01&lt;-pack" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="384.147,44.5,393.147,48.5,389.147,44.5,393.147,40.5,384.147,44.5" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[941922edbcbbcfe9fad2946614f55a99]
+reverse link pack to step--><path d="M617.977,44.5 C625.099,44.5 632.221,44.5 639.344,44.5 " fill="none" id="pack&lt;-step" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="604.725,44.5,610.725,48.5,616.725,44.5,610.725,40.5,604.725,44.5" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9e58ee1f618f89e5308712653a1eb4da]
+link testApp01 to testTask01--><path d="M195,81.007 C195,95.182 195,111.825 195,127.466 " fill="none" id="testApp01-&gt;testTask01" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="195,140.866,199,134.866,195,128.866,191,134.866,195,140.866" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6ce027f61ee5fa99978ca4677d9bed4d]
+reverse link testTask01 to input01--><path d="M195,238.1516 C195,256.8799 195,276.6031 195,290.3841 " fill="none" id="testTask01&lt;-input01" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="195,225.111,191,231.111,195,237.111,199,231.111,195,225.111" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[0ac10ca632d4f5230ab8dec42368de9f]
+@startuml
+object "testMachine01 : Machine" as testMachine01 {
+    id = "testMachine01"
+    name = "Test Machine 01"
+    supplierId = "user01"
+}
+
+object "metrics : Metrics" as metrics {
+    cpus = null
+    gpus = null
+    memory = null
+    localStorage = null
+}
+
+testMachine01 - -o metrics
+
+object "cpus : MachineMetricValue" as cpus {
+    current: 0.0
+    max: 8.0
+}
+object "gpus : MachineMetricValue" as gpus {
+    current: 0.0
+    max: 4.0
+}
+
+object "memory : MachineMetricValue" as memory {
+    current: 0.0
+    max: 32.0
+}
+
+object "localStorage : MachineMetricValue" as localStorage {
+    current: 0.0
+    max: 128.0
+}
+
+
+metrics - -o cpus
+metrics - -o gpus
+metrics - -o memory
+metrics - -o localStorage
+
+object "testApp01 : ComputationApplication" as testApp01 {
+    id = 10002
+    name = "Test App 01"
+    description = "Benchmark app"
+    icon = "http://www.todayifoundout.com/wp-content/uploads/2010/04/ok.gif"
+}
+
+object ": ComputationStepPackage" as pack {
+    applicationId = 10002
+    computationSteps = [step]
+    version: v1.0.0
+}
+
+testApp01 <. pack
+
+object "step : ComputationStep" as step {
+    params = []
+    artifactUrl = <<coplex calculcations>>
+    - command
+}
+
+pack *- step
+
+object "testTask01 : ComputationTask" as testTask01 {
+    id = 20001
+    name = "Test Task 01"
+    userId = 00001
+    application = testApp01
+    input = input01
+}
+
+object "input01 : ComputationInput" as input01 {
+    logger = null
+}
+
+testApp01 - -o testTask01
+testTask01 o- - input01
+@enduml
+
+PlantUML version 1.2019.12(Sun Nov 03 10:24:54 UTC 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

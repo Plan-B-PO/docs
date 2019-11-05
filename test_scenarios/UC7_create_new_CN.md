@@ -1,17 +1,3 @@
-# Test scenario
-
-## UC7 Create new CN
-
-### Główny
-
-##### 1. __Supplier__ wybiera opcję dodania nowego CN
-##### 2. System wyświetla formularz dodania nowego CN
-##### 3. __Supplier__ wypełnia formularz 
-##### 4. __Supplier__ naciska przycisk "Akceptuj"
-##### 5. System wyświetla komunikat o wygenerowanym tokenie
-##### 6. __Supplier__ wybiera opcję "Zakończ"
-##### 7. _\<\<invokes\>\>_ UC8 Show owned CN list
-
 # Test Scenario
 
 ## UC7 create new CN
@@ -22,7 +8,7 @@
 
 ### Warunki początkowe 
 
-- Zalogowany __Supplier__ to _user02_.
+- Zalogowany __Supplier__ to _user01_.
 
 ### Przypadki testowe
 
@@ -58,7 +44,7 @@ ___WARUNEK SUKCESU:___
     Memory
     Local Storage
 	```
-3. __Suplier__ uzupełnia formularz
+3. __Suplier__ uzupełnia pole formularza
 	```
 	Nazwa: ?#$Machine_1 asd
 	```
