@@ -38,10 +38,8 @@ ___WARUNEK SUKCESU:___
 
 1. __App User__ wybiera opcję wyświetlenia zdefiniowanych CT
 2. System wyświetla listę nazw zdefiniowanych CT 
-    ```
-    - "Test Task 03"
-    - "Test Task 04"
-    ```
+    - `"Test Task 03"`
+    - `"Test Task 04"`
 3. __App User__ wybiera opcję "Abort" przy "Test Task 03". 
 4. System wyświetla okno potwierdzenia, z pytaniem 
    "Are you sure, you want to abort "Test Task 03"?"
@@ -57,10 +55,8 @@ ___WARUNEK SUKCESU:___
 
 1. __App User__ wybiera opcję wyświetlenia zdefiniowanych CT
 2. System wyświetla listę nazw zdefiniowanych CT 
-    ```
-    - "Test Task 03"
-    - "Test Task 04"
-    ```
+    - `"Test Task 03"`
+    - `"Test Task 04"`
 3. __App User__ wybiera opcję "Abort" przy "Test Task 04". 
 4. System wyświetla okno potwierdzenia, z pytaniem 
    "Are you sure, you want to abort "Test Task 04"?"
