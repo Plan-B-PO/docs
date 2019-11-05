@@ -13,12 +13,13 @@
 ### Warunki początkowe 
 
 - Zalogowany __Supplier__ to _user01_.
+- Zalogowany __Supplier__ to _user02_.
 
 ### Przypadki testowe
 
 #### 1. Pomyślne wyświetlenie listy posiadanych maszyn.
 
-1. __Supplier__ wybiera opcję wyświetlenia posiadanych CN
+1. __user01__ wybiera opcję wyświetlenia posiadanych CN
 2. System wyświetla listę posiadanych CN - pokazując ich nazwy oraz statusy
     ```
     - "Test Machine 01 - online"
@@ -31,7 +32,7 @@ ___WARUNEK SUKCESU:___
 
 #### 2. Wyświetlenie pustej listy maszyn.
 
-1. __Supplier__ wybiera opcję wyświetlenia posiadanych CN
+1. __user02__ wybiera opcję wyświetlenia posiadanych CN
 2. System wyświetla komunikat
 	```
 	Nie znaleziono dostępnych maszyn. Zarejestruj nową.
