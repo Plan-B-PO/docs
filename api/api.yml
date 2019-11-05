@@ -296,12 +296,18 @@ paths:
                 type: string
                 enum: [waiting, working]
 
-  /machine/computation:
+  /machine/computation/{id}:
     get:
       tags:
       - machine
       summary: get current computation status
       operationId: getComputation
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
       responses:
         '200':
           description: current computation details
@@ -316,6 +322,12 @@ paths:
       - machine
       summary: run computation on machine
       operationId: runMachineComputation
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: false
       requestBody:
         required: true
         content:
@@ -330,6 +342,12 @@ paths:
       - machine
       summary: cancel current computation
       operationId: cancelMachineComputation
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
       responses:
         '200':
           description: computation canceled
