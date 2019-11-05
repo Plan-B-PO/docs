@@ -18,7 +18,7 @@
 
 ### Sprawdzane UC
 
-- [UC3](../scenarios/UC7_create_new_CN)
+- [UC7](../scenarios/UC7_create_new_CN)
 
 ### Warunki początkowe 
 
@@ -33,17 +33,30 @@
 	```
 	Nazwa
 	```
-3. __Suplier__ uzupełnia formularz
+3. __Supplier__ uzupełnia formularz
 	```
 	Nazwa: Machine 1
 	```
+4. __Supplier__ wybiera opcję `Utwórz`.
+5. System wyświetla wygenerowany token, np:
+`d7156b67f89e2ccbb226ecd5aabcdd93`
+6. __Supplier__ wybiera opcję `OK`.
+7. System wyświetla listę CN
+
+___WARUNEK SUKCESU:___
+- System wyświetlił token
+- Nowy CN został dodany do listy
 
 #### 2. Błąd formularza.
 
 1. __Supplier__ wybiera opcję dodanie nowego CN
 2. System wyświetla formularz dodania CN
 	```
-	Nazwa
+    Nazwa
+    CPU
+    GPU
+    Memory
+    Local Storage
 	```
 3. __Suplier__ uzupełnia formularz
 	```
@@ -53,4 +66,5 @@
 
 ___WARUNEK SUKCESU:___
 
-- System nie pozwolił na utworzenie CN z błędną nazwą
+- Przycisk `Utwórz` jest zablokowany
+- Komunikat błedu jest wyświetlony

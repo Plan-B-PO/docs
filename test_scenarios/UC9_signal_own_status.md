@@ -10,31 +10,38 @@
 
 - Maszyna jest zarejestrowna w systemie
 - Klient działa na maszynie
+- Zalogowany __Supplier__ to _user01_.
+- Zalogowany __App User__ to _user02_.
+- Tylko jedna maszyna `Test Machine 01` (właścicielem jest _user01_) jest dostępna
 
 ### Przypadki testowe
 
-#### 1. Pomyślne wyświetlenie listy posiadanych maszyn.
+#### 1. Pomyślne zaraprtowanie statusu
 
-1. __App User__ wybiera opcję wyświetlenia posiadanych CN
+1. __Supplier__ wybiera opcję wyświetlenia posiadanych CN
 2. System wyświetla listę posiadanych CN - pokazując ich nazwy oraz statusy
     ```
     - "Test Machine 01 - online"
-    - "Test Machine 04 - offline since 2 days"
     ```
+3. __Supplier__ wybiera `Test Machine 01`
+4. System wyświetla metryki maszyny:
+    ```
+        CPU: 10%
+        GPU: 5%
+        Memory: 10%
+        Local Storage: 20%
+    ```
+5. __App User__ uruchamia aplikację z dowolnymi danymi
+6. System wyświetla komunikat o poprawnym uruchomieniu aplikacji
+7. __Supplier__ wybiera `Test Machine 01`
+8. System wyświetla metryki maszyny:
+   ```
+       CPU: 20%
+       GPU: 15%
+       Memory: 21%
+       Local Storage: 20%
+   ```
 
 ___WARUNEK SUKCESU:___
 
-- Użytkownik dowiedział się, które z jego maszyn działają w systemie.
-
-#### 2. Wyświetlenie pustej listy maszyn.
-
-1. __App User__ wybiera opcję wyświetlenia posiadanych CN
-2. System wyświetla komunikat
-	```
-	Nie znaleziono dostępnych maszyn. Zarejestruj nową.
-	```
-	oraz przycisk dodania nowej maszyny.
-
-___WARUNEK SUKCESU:___
-
-- Użytkownik dowiedział się o możliwości zarejestrowania maszyny.
+- Aplikacja wpłynęła na reportowane metryki maszyny
