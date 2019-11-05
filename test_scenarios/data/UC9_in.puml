@@ -1,0 +1,43 @@
+@startuml
+
+object "testMachine01 : Machine" as testMachine01 {
+    id = "testMachine01"
+    name = "Test Machine 01"
+    supplierId = "user01"
+}
+
+object "metrics : Metrics" as metrics {
+    cpus = null
+    gpus = null
+    memory = null
+    localStorage = null
+}
+
+testMachine01 --o metrics
+
+object "cpus : MachineMetricValue" as cpus {
+    current: 0.0
+    max: 8.0
+}
+object "gpus : MachineMetricValue" as gpus {
+    current: 0.0
+    max: 4.0
+}
+
+object "memory : MachineMetricValue" as memory {
+    current: 0.0
+    max: 32.0
+}
+
+object "localStorage : MachineMetricValue" as localStorage {
+    current: 0.0
+    max: 128.0
+}
+
+
+metrics --o cpus
+metrics --o gpus
+metrics --o memory
+metrics --o localStorage
+
+@enduml

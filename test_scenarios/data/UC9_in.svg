@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" contentScriptType="application/ecmascript" contentStyleType="text/css"
+		height="322px" preserveAspectRatio="none" style="width:915px;height:322px;" version="1.1" viewBox="0 0 915 322"
+		width="915px" zoomAndPan="magnify"><defs><filter height="300%" id="f1555znp23prqb" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#f1555znp23prqb)" height="60.8906" style="stroke: #A80036; stroke-width: 1.5;" width="171" x="341" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="157" x="348" y="21.1387">testMachine01 : Machine</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="342" x2="511" y1="25.9688" y2="25.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="103" x="347" y="39.251">id = "testMachine01"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="130" x="347" y="50.8916">name = "Test Machine 01"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="103" x="347" y="62.5322">supplierId = "user01"</text><rect fill="#FEFECE" filter="url(#f1555znp23prqb)" height="72.5313" style="stroke: #A80036; stroke-width: 1.5;" width="117" x="368" y="129"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="103" x="375" y="142.1387">metrics : Metrics</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="369" x2="484" y1="146.9688" y2="146.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="52" x="374" y="160.251">cpus = null</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="53" x="374" y="171.8916">gpus = null</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="72" x="374" y="183.5322">memory = null</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="90" x="374" y="195.1729">localStorage = null</text><rect fill="#FEFECE" filter="url(#f1555znp23prqb)" height="49.25" style="stroke: #A80036; stroke-width: 1.5;" width="181" x="6" y="262"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="167" x="13" y="275.1387">cpus : MachineMetricValue</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="186" y1="279.9688" y2="279.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="56" x="12" y="293.251">current: 0.0</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="43" x="12" y="304.8916">max: 8.0</text><rect fill="#FEFECE" filter="url(#f1555znp23prqb)" height="49.25" style="stroke: #A80036; stroke-width: 1.5;" width="182" x="222.5" y="262"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="168" x="229.5" y="275.1387">gpus : MachineMetricValue</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="223.5" x2="403.5" y1="279.9688" y2="279.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="56" x="228.5" y="293.251">current: 0.0</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="43" x="228.5" y="304.8916">max: 4.0</text><rect fill="#FEFECE" filter="url(#f1555znp23prqb)" height="49.25" style="stroke: #A80036; stroke-width: 1.5;" width="200" x="439.5" y="262"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="186" x="446.5" y="275.1387">memory : MachineMetricValue</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="440.5" x2="638.5" y1="279.9688" y2="279.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="56" x="445.5" y="293.251">current: 0.0</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="49" x="445.5" y="304.8916">max: 32.0</text><rect fill="#FEFECE" filter="url(#f1555znp23prqb)" height="49.25" style="stroke: #A80036; stroke-width: 1.5;" width="230" x="674.5" y="262"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="216" x="681.5" y="275.1387">localStorage : MachineMetricValue</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="675.5" x2="903.5" y1="279.9688" y2="279.9688"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="56" x="680.5" y="293.251">current: 0.0</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="55" x="680.5" y="304.8916">max: 128.0</text><!--MD5=[93dd3cf078baefbdec7e18c0a53d897e]
+link testMachine01 to metrics--><path d="M426.5,69.123 C426.5,82.971 426.5,99.83 426.5,115.499 " fill="none" id="testMachine01-&gt;metrics" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="426.5,128.858,430.5,122.858,426.5,116.858,422.5,122.858,426.5,128.858" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[23d41bd2c354db92419e67279af6f3e4]
+link metrics to cpus--><path d="M367.883,187.638 C313.934,207.092 233.534,236.0847 174.241,257.4663 " fill="none" id="metrics-&gt;cpus" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="161.925,261.9072,168.9261,263.6346,173.2134,257.8364,166.2123,256.109,161.925,261.9072" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[1487f3635dfb38c6f0dfd59e397cee15]
+link metrics to gpus--><path d="M392.596,202.204 C377.558,218.041 359.962,236.5709 345.19,252.1274 " fill="none" id="metrics-&gt;gpus" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="335.945,261.8627,342.9771,260.2661,344.208,253.1608,337.1759,254.7574,335.945,261.8627" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[662b96f997bb63bb1c22c5549f095d92]
+link metrics to memory--><path d="M460.404,202.204 C475.442,218.041 493.038,236.5709 507.81,252.1274 " fill="none" id="metrics-&gt;memory" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="517.055,261.8627,515.8241,254.7574,508.792,253.1608,510.0229,260.2661,517.055,261.8627" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[45296e734d22fda92f4da286c3758751]
+link metrics to localStorage--><path d="M485.226,185.752 C544.794,205.28 637.579,235.6967 705.035,257.8102 " fill="none" id="metrics-&gt;localStorage" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="717.746,261.9772,713.2907,256.307,706.3432,258.2388,710.7984,263.9089,717.746,261.9772" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[39f2de9920cc63774ba15c7fba1a5048]
+@startuml
+object "testMachine01 : Machine" as testMachine01 {
+    id = "testMachine01"
+    name = "Test Machine 01"
+    supplierId = "user01"
+}
+
+object "metrics : Metrics" as metrics {
+    cpus = null
+    gpus = null
+    memory = null
+    localStorage = null
+}
+
+testMachine01 - -o metrics
+
+object "cpus : MachineMetricValue" as cpus {
+    current: 0.0
+    max: 8.0
+}
+object "gpus : MachineMetricValue" as gpus {
+    current: 0.0
+    max: 4.0
+}
+
+object "memory : MachineMetricValue" as memory {
+    current: 0.0
+    max: 32.0
+}
+
+object "localStorage : MachineMetricValue" as localStorage {
+    current: 0.0
+    max: 128.0
+}
+
+
+metrics - -o cpus
+metrics - -o gpus
+metrics - -o memory
+metrics - -o localStorage
+@enduml
+
+PlantUML version 1.2019.12(Sun Nov 03 10:24:54 UTC 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.7.0_25-b15
+Operating System: Linux
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
