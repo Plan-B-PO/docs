@@ -23,8 +23,8 @@
     ComputationApplication o-- "0..*" ComputationStepParam
     ComputationInput ..> ComputationApplication
     ComputationStepPackage *-- "1..*" ComputationStep
+    ComputationStepPackage ..> ComputationApplication
     ComputationStep o-- "0..*" ComputationStepParam
-    ComputationStep ..> ComputationApplication
     ComputationRunnable *-- "1" ComputationStep
     ComputationRunnable o-- ComputationTopic
     Computation *-- "1"ComputationStepPackage
