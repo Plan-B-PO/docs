@@ -132,7 +132,17 @@ paths:
             schema:
               $ref: '#/components/schemas/ComputationStepPackage'
       responses:
-        '200':
+        '201':
+          headers:
+            location:
+              schema:
+                type: string
+                example: /machine-manager/launcher/computations/12333
+                description: url of created computation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Computation'
           description: application ran successfully
         '400':
           description: no machine is available
@@ -535,7 +545,9 @@ components:
           type: string
           example: 2135144
         computationSteps:
-          $ref: '#/components/schemas/ComputationStep'
+          type: array
+          items:
+            $ref: '#/components/schemas/ComputationStep'
         version:
           type: string
           example: 1.2.3-beta.4
@@ -550,7 +562,7 @@ components:
             $ref: '#/components/schemas/ComputationStepParam'
         artifactUrl:
           type: string
-          example: library/applications/sample-app.zip
+          example: https://ext-repo.com/applications/sample-app.zip
         command:
           type: string
           example: ./run.sh
@@ -590,7 +602,6 @@ components:
       required:
       - id
       - runnable
-      - logger
       - input
       properties:
         id:
@@ -601,9 +612,6 @@ components:
           example: 234565432
         runnable:
           $ref: '#/components/schemas/ComputationStepPackage'
-        logger:
-          type: string
-          example: https://my-domain.pl/log
         input:
           $ref: '#/components/schemas/ComputationInput'
     Machine:
