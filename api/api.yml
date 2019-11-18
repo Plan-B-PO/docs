@@ -545,7 +545,9 @@ components:
           type: string
           example: 2135144
         computationSteps:
-          $ref: '#/components/schemas/ComputationStep'
+          type: array
+          items:
+            $ref: '#/components/schemas/ComputationStep'
         version:
           type: string
           example: 1.2.3-beta.4
@@ -560,7 +562,7 @@ components:
             $ref: '#/components/schemas/ComputationStepParam'
         artifactUrl:
           type: string
-          example: library/applications/sample-app.zip
+          example: https://ext-repo.com/applications/sample-app.zip
         command:
           type: string
           example: ./run.sh
