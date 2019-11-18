@@ -1,0 +1,11 @@
+@startuml
+
+interface IMachines {
+
+getAvailableMachines() : List<Machine>
+activateComputationTask(Computation computation, Machine machine) : void
+cancelComputationTask(String computationId) : void
+
+}
+
+@enduml

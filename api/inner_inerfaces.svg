@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="108px" preserveAspectRatio="none" style="width:372px;height:108px;" version="1.1" viewBox="0 0 372 108" width="372px" zoomAndPan="magnify"><defs><filter height="300%" id="f1d61xmmgir24d" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--class IMachines--><rect fill="#FEFECE" filter="url(#f1d61xmmgir24d)" height="89.5078" id="IMachines" style="stroke: #A80036; stroke-width: 1.5;" width="355" x="6" y="8"/><ellipse cx="151.25" cy="24" fill="#B4A7E5" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M152.25,21 L152.25,27 L154.25,27 L154.7344,27 L155.25,27.625 L155.25,28 L155.25,28.375 L154.7344,29 L154.25,29 L148.25,29 L147.7656,29 L147.25,28.375 L147.25,28 L147.25,27.625 L147.7656,27 L148.25,27 L150.25,27 L150.25,21 L148.25,21 L147.7656,21 L147.25,20.375 L147.25,20 L147.25,19.625 L147.7656,19 L148.25,19 L154.25,19 L154.7344,19 L155.25,19.625 L155.25,20 L155.25,20.375 L154.7344,21 L154.25,21 L152.25,21 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="56" x="171.75" y="28.9102">IMachines</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="360" y1="40" y2="40"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="360" y1="48" y2="48"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="191" x="12" y="63.4189">getAvailableMachines() : List&lt;Machine&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="343" x="12" y="77.2549">activateComputationTask(String computationId, Machine machine) : bool</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="248" x="12" y="91.0908">cancelComputationTask(String computationId) : bool</text><!--
+@startuml
+
+interface IMachines {
+
+getAvailableMachines() : List<Machine>
+activateComputationTask(String computationId, Machine machine) : bool
+cancelComputationTask(String computationId) : bool
+
+}
+
+@enduml
+
+PlantUML version 1.2018.11(Sat Sep 22 18:43:53 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_152-release-1248-b8
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1250
+Language: pl
+Country: PL
+--></g></svg>
