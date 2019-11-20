@@ -19,19 +19,24 @@
 
 #### 1. Stworzenie nowego CT
 
-1. __App User__ wybiera opcję "Create CT"
-2. System wyświetla formularz tworzenia CT
-3. __App User__ wypełnia formularz tworzenia CT
+1. __App User__ wybiera opcję "Create CT".
+2. System wyświetla formularz tworzenia CT.
+3. __App User__ wypełnia formularz tworzenia CT.
     ```
     name = My Test Task
     logger = default
     ```
-4. __App User__ wybiera opcję "Create"
-5. System wyświetla informację o poprawnie utworzonym CT o nazwie "My Test Task"
-6. __App User__ wybiera opcję "OK"
+4. __App User__ wybiera opcję "Create".
+5. System wyświetla komunikat 'Computation Task "My Test Task" created'.
+6. __App User__ wybiera opcję "OK".
 
 ___WARUNKI SUKCESU:___
 
+- Wyświetla się panel computation tasków z nowym zdefiniowanym ComputationTask.
+    ```
+    - nazwa 
+    - przyciski akcji
+    ```
 - W bazie został utworzony nowy ComputationTask.
 
     ![model_out_1](data/T3_out_1.svg)
@@ -46,11 +51,16 @@ ___WARUNKI SUKCESU:___
     logger = https://my-logger.com/log
     ```
 4. __App User__ wybiera opcję "Create"
-5. System wyświetla informację o poprawnie utworzonym CT o nazwie "My Test Task 2"
+5. System wyświetla komunikat 'Computation Task "My Test Task 2" created'.
 6. __App User__ wybiera opcję "OK"
 
 ___WARUNKI SUKCESU:___
 
+- Wyświetla się panel computation tasków z nowym zdefiniowanym ComputationTask.
+    ```
+    - nazwa 
+    - przyciski akcji
+    ```
 - W bazie został utworzony nowy ComputationTask.
 
     ![model_out_2](data/T3_out_2.svg)
