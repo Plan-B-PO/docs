@@ -75,7 +75,7 @@ ___WARUNKI SUKCESU:___
     logger = "definitely not html string"
     ```
 4. __App User__ wybiera opcję "Create"
-5. System wyświetla informację o niepoprawnym formacie loggera i wymogu formatu url-a.
+5. System wyświetla informację "Invalid input data - abort".
 6. __App User__ wybiera opcję "OK"
 
 ___WARUNKI SUKCESU:___
