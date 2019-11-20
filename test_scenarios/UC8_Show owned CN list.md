@@ -10,35 +10,39 @@
 
 ![model](data/UC8_in.svg)
 
-### Warunki początkowe 
-
-- Zalogowany __Supplier__ to _user01_.
-- Zalogowany __Supplier__ to _user02_.
-
 ### Przypadki testowe
+
+__WARUNKI POCZĄTKOWE:__ 
+
+- Zalogowany __Supplier__ to _1_.
 
 #### 1. Pomyślne wyświetlenie listy posiadanych maszyn.
 
 1. __user01__ wybiera opcję wyświetlenia posiadanych CN
-2. System wyświetla listę posiadanych CN - pokazując ich nazwy oraz statusy
-    ```
-    - "Test Machine 01 - online"
-    - "Test Machine 02 - offline since 2 days"
+2. System wyświetla tabelę posiadanych CN - pokazując ich nazwy oraz statusy
+    ```json
+    [{
+       "Machine name": "Test Machine 01",
+       "Status": "Disabled"
+    }, {
+       "Machine name": "Test Machine 02",
+       "Status": "Disabled"
+    }]
     ```
 
 ___WARUNEK SUKCESU:___
 
-- Użytkownik dowiedział się, które z jego maszyn działają w systemie.
+- Data wyświetlają się poprawnie w tabeli.
 
 #### 2. Wyświetlenie pustej listy maszyn.
 
+__WARUNKI POCZĄTKOWE:__
+
+- Zalogowany __Supplier__ to _2_.
+
 1. __user02__ wybiera opcję wyświetlenia posiadanych CN
-2. System wyświetla komunikat
-	```
-	Nie znaleziono dostępnych maszyn. Zarejestruj nową.
-	```
-	oraz przycisk dodania nowej maszyny.
+2. System wyświetla pustą tabelę.
 
 ___WARUNEK SUKCESU:___
 
-- Użytkownik dowiedział się o możliwości zarejestrowania maszyny.
+- Wyświetlana tabela nie zawiera danych.
