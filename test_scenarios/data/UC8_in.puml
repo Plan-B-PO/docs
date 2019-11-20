@@ -3,7 +3,7 @@
 object "testMachine01 : Machine" as testMachine01 {
     id = "testMachine01"
     name = "Test Machine 01"
-    supplierId = "user01"
+    supplierId = "1"
 }
 
 object "metrics : Metrics" as metrics {
@@ -18,7 +18,7 @@ testMachine01 --o metrics
 object "testMachine02 : Machine" as testMachine02 {
     id = "testMachine02"
     name = "Test Machine 02"
-    supplierId = "user01"
+    supplierId = "1"
 }
 
 object "metrics2 : Metrics" as metrics2 {
