@@ -85,6 +85,110 @@ paths:
       responses:
         '200':
           description: computation stopped
+  /launcher/app-user/application:
+    get:
+      tags:
+      - launcher
+      summary: Get applications in cockpit
+      responses:
+        '200':
+          description: Applications list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ComputationApplication'
+    post:
+      tags:
+      - launcher
+      summary: Add application to cockpit
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ApplicationRequest'
+      responses:
+        '201':
+          description: Application added
+  /launcher/app-user/application/{id}:
+    delete:
+        tags:
+        - launcher
+        summary: Remove application from cockpit
+        operationId: removeApplicationFromCockpit
+        parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+        responses:
+          '200':
+            description: Application removed
+  /launcher/app-user/rack:
+    get:
+      tags:
+      - launcher
+      summary: Get Computation Rack
+      operationId: getComputationRack
+      responses:
+        '200':
+          description: Applications list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ComputationTask'
+    post:
+      tags:
+      - launcher
+      summary: Add to Computation Rack
+      operationId: addToComputationRack
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ComputationTask'
+      responses:
+        '200':
+          description: CT successfully added
+  /launcher/app-user/rack/{id}:
+    get:
+        tags:
+        - launcher
+        summary: Show CT details
+        operationId: showTaskDetails
+        parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+        responses:
+          '200':
+            description: Task details
+            content:
+              application/json:
+                schema:
+                    $ref: '#/components/schemas/ComputationTask'
+    delete:
+        tags:
+        - launcher
+        summary: Remove CT from Computation Rack
+        operationId: removeTaskFromComputationRack
+        parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+        responses:
+          '200':
+            description: Task removed
   /library/launcher/applications:
     get:
       tags:
@@ -290,6 +394,44 @@ paths:
       responses:
         '200':
           description: metrics reported successfully
+          
+  /machine-manager/requests:
+    get:
+      tags:
+      - machine manager
+      summary: get all requests
+      operationId: getRequests
+      responses:
+        '200':
+          description: list of requests
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SupplierRequest'
+  /machine-manager/requests/{id}:
+    post:
+      tags:
+      - machine manager
+      summary: resolve request
+      operationId: resolveRequest
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ResolveRequest'
+      responses:
+        '200':
+          description: Request resolved
+    
 
   /machine/status:
     get:
@@ -668,3 +810,36 @@ components:
         step:
           type: string
           example: step1
+    ApplicationRequest:
+      type: object
+      required:
+      - id
+      properties:
+        id:
+          type: string
+          example: 3142
+    SupplierRequest:
+      type: object
+      required:
+      - id
+      - supplierId
+      - machine
+      properties:
+        id:
+          type: string
+          example: 3142
+        supplierId:
+          type: string
+          example: bob
+        machine:
+          $ref: '#/components/schemas/Machine'
+    ResolveRequest:
+      type: object
+      required:
+      - decision
+      properties:
+        decision:
+          type: string
+          enum: [approve, delete]
+        comment:
+          type: string
