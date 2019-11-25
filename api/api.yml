@@ -75,7 +75,7 @@ paths:
       tags: 
       - launcher
       summary: stopComputation
-      operationId: stopComputatuin
+      operationId: stopComputation
       parameters:
       - in: path
         name: id
@@ -85,7 +85,7 @@ paths:
       responses:
         '200':
           description: computation stopped
-  /launcher/app-user/application:
+  /launcher/app-user/applications:
     get:
       tags:
       - launcher
@@ -112,7 +112,7 @@ paths:
       responses:
         '201':
           description: Application added
-  /launcher/app-user/application/{id}:
+  /launcher/app-user/applications/{id}:
     delete:
         tags:
         - launcher
