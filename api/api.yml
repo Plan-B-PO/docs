@@ -45,7 +45,7 @@ paths:
     get:
       tags:
       - launcher
-      summary: gets all computations
+      summary: gets my computations
       operationId: listComputations
       responses:
         '200':
@@ -71,10 +71,28 @@ paths:
         '200':
           description: Application ran successfully
   /launcher/app-user/computations/{id}:
+    get:
+      tags:
+      - launcher
+      summary: Get computation details
+      operationId: getComputationDetails
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      responses:
+        '200':
+          description: computation details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComputationDetails'
     delete:
       tags: 
       - launcher
-      summary: stopComputation
+      summary: Stop computation
       operationId: stopComputation
       parameters:
       - in: path
@@ -286,6 +304,24 @@ paths:
         '400':
           description: no machine is available
   /machine-manager/launcher/computations/{id}:
+    get:
+      tags:
+      - machine manager
+      summary: get computation status
+      operationId: getComputationStatus
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      responses:
+        '200':
+          description: computation status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComputationStatus'
     delete:
       tags:
       - machine manager
@@ -902,3 +938,15 @@ components:
         level:
           type: string
           enum: [INFO, WARN, ERROR, DEBUG, TRACE]
+    ComputationStatus:
+      type: object
+      required:
+      - status
+      properties:
+        statuss:
+          type: string
+          enum: [WAITING, IN_PROGRESS, CANCELED, DONE]
+    ComputationDetails:
+      allOf:
+        - $ref: '#/components/schemas/ComputationTask'
+        - $ref: '#/components/schemas/ComputationStatus'
