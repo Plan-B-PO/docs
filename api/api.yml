@@ -85,7 +85,42 @@ paths:
       responses:
         '200':
           description: computation stopped
-  /launcher/app-user/applications:
+  /launcher/app-user/computations/{id}/logs:
+    get:
+      tags:
+      - launcher
+      operationId: getComputationLogs
+      security:
+      - OAuth2: [appuser]
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: from
+        schema:
+          type: string
+      - in: query
+        name: to
+        schema:
+          type: string
+      - in: query
+        name: filter
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Logs array
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Log'
+      
+  /launcher/app-user/application:
     get:
       tags:
       - launcher
@@ -112,7 +147,7 @@ paths:
       responses:
         '201':
           description: Application added
-  /launcher/app-user/applications/{id}:
+  /launcher/app-user/application/{id}:
     delete:
         tags:
         - launcher
@@ -135,7 +170,7 @@ paths:
       operationId: getComputationRack
       responses:
         '200':
-          description: Applications list
+          description: Computations list
           content:
             application/json:
               schema:
@@ -401,6 +436,8 @@ paths:
       - machine manager
       summary: get all requests
       operationId: getRequests
+      security:
+      - OAuth2: [administrator]
       responses:
         '200':
           description: list of requests
@@ -416,6 +453,8 @@ paths:
       - machine manager
       summary: resolve request
       operationId: resolveRequest
+      security:
+      - OAuth2: [administrator]
       parameters:
       - in: path
         name: id
@@ -545,6 +584,12 @@ paths:
       responses:
         '200':
           description: Logs array
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Log'
 
 
   /queue/topics:
@@ -843,3 +888,17 @@ components:
           enum: [approve, delete]
         comment:
           type: string
+    Log:
+      type: object
+      required:
+      - timestamp
+      - message
+      - level
+      properties:
+        timestamp:
+          type: string
+        message:
+          type: string
+        level:
+          type: string
+          enum: [INFO, WARN, ERROR, DEBUG, TRACE]
