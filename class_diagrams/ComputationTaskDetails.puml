@@ -1,0 +1,39 @@
+@startuml
+ComputationTask "0...*" --o "1" Launcher
+Launcher .> MachineManager
+Launcher ..> IShowComputationTaskHandling
+
+skinparam classAttributeIconSize 0
+
+
+class ComputationTask {
+  @Entity
+- string id
+- string name
+- string description
+- string icon
++ getID(): string
++ getName(): string
++ getDescription(): string
++ getIcon(): string
+}
+
+class Launcher {
++ string UserID
++ string Username
++ List<ComputationTask> computationTask
++ getComputationTask(UserId : String) : List<ComputationTask>
+}
+
+
+class MachineManager << @Endpoint  >> {
++ /launcher/app-user/application(UserId : String) : List<ComputationTask>
+
+}
+
+object IShowComputationTaskHandling {
+ + showComputationTask() 
+}
+
+@enduml
+
