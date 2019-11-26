@@ -138,7 +138,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/Log'
       
-  /launcher/app-user/application:
+  /launcher/app-user/applications:
     get:
       tags:
       - launcher
@@ -165,7 +165,7 @@ paths:
       responses:
         '201':
           description: Application added
-  /launcher/app-user/application/{id}:
+  /launcher/app-user/applications/{id}:
     delete:
         tags:
         - launcher
@@ -207,7 +207,7 @@ paths:
             schema:
               $ref: '#/components/schemas/ComputationTask'
       responses:
-        '200':
+        '201':
           description: CT successfully added
   /launcher/app-user/rack/{id}:
     get:
