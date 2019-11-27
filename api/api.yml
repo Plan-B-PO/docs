@@ -446,7 +446,7 @@ paths:
     post:
       tags:
       - machine manager
-      summary: report machine metrics
+      summary: Report machine metrics. It is used to register machine state in machine manager.
       operationId: bumpMachine
       security:
       - MachineAuth: []
@@ -464,49 +464,9 @@ paths:
               $ref: '#/components/schemas/MachineMetrics'
       responses:
         '200':
-          description: metrics reported successfully
-          
-  /machine-manager/requests:
-    get:
-      tags:
-      - machine manager
-      summary: get all requests
-      operationId: getRequests
-      security:
-      - OAuth2: [administrator]
-      responses:
-        '200':
-          description: list of requests
-          content:
-            application/json:
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/SupplierRequest'
-  /machine-manager/requests/{id}:
-    post:
-      tags:
-      - machine manager
-      summary: resolve request
-      operationId: resolveRequest
-      security:
-      - OAuth2: [administrator]
-      parameters:
-      - in: path
-        name: id
-        schema:
-          type: string
-        required: true
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/ResolveRequest'
-      responses:
-        '200':
-          description: Request resolved
-    
+          description: Metrics reported successfully
+        '401':
+          description: Invalid token
 
   /machine/status:
     get:
@@ -899,31 +859,6 @@ components:
         id:
           type: string
           example: 3142
-    SupplierRequest:
-      type: object
-      required:
-      - id
-      - supplierId
-      - machine
-      properties:
-        id:
-          type: string
-          example: 3142
-        supplierId:
-          type: string
-          example: bob
-        machine:
-          $ref: '#/components/schemas/Machine'
-    ResolveRequest:
-      type: object
-      required:
-      - decision
-      properties:
-        decision:
-          type: string
-          enum: [approve, delete]
-        comment:
-          type: string
     Log:
       type: object
       required:
