@@ -16,7 +16,8 @@ ___WARUNKI POCZĄTKOWE:___
 
 1. __Supplier__ uruchamia na maszynie rejestrację z poprawnie
 ustawionym tokenem i parametrami od `mashineT9_1`.
-2. System wyświetla po pewnym czasie informację "Successfully submited".
+2. System wypisuje w outpucie po pewnym czasie 
+informację "Successfully submited".
 3. W detalach maszyny `mashineT9_1` __Supplier__ odświeża stronę.  
 
 ___WARUNKI SUKCESU:___
@@ -34,7 +35,8 @@ ___WARUNKI POCZĄTKOWE:___
 
 1. __Supplier__ uruchamia na maszynie rejestrację z poprawnie
 ustawionym tokenem i parametrami od `mashineT9_2`.
-2. System wyświetla po pewnym czasie informację "Authentication denied".
+2. System wypisuje w outpucie po pewnym czasie 
+informację "Authentication denied".
 3. W detalach maszyny `mashineT9_2` __Supplier__ odświeża stronę.  
 
 ___WARUNKI SUKCESU:___
@@ -52,13 +54,14 @@ ___WARUNKI POCZĄTKOWE:___
 
 1. __Supplier__ uruchamia na maszynie rejestrację z poprawnie
 ustawionym tokenem i parametrami od `mashineT9_4`.
-2. System wyświetla po pewnym czasie informację "Authentication denied".
+2. System wypisuje w outpucie po pewnym czasie 
+informację "Authentication denied".
 3. W detalach maszyny `mashineT9_3` __Supplier__ odświeża stronę.  
 
 ___WARUNKI SUKCESU:___
 
 - Wyświetlona została informacja "Authentication denied".
-- Po odświeżenie, System wyświetlił status "Declared" maszyny.
+- Po odświeżenie, System wyświetlił status "Unknown" maszyny.
 
 #### 4. Próba rejestracji z zawyżonymi parametrami.
 
@@ -70,7 +73,8 @@ ___WARUNKI POCZĄTKOWE:___
 
 1. __Supplier__ uruchamia na maszynie rejestrację z poprawnie
 ustawionym tokenem i parametrami od `mashineT9_4`.
-2. System wyświetla po pewnym czasie informację "Verification failed".
+2. System wypisuje w outpucie po pewnym czasie 
+informację "Verification failed".
 3. W detalach maszyny `mashineT9_5` __Supplier__ odświeża stronę.  
 
 ___WARUNKI SUKCESU:___
