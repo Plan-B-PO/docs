@@ -366,7 +366,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/Machine'
+              $ref: '#/components/schemas/MachineRequest'
       responses:
         '201':
           description: Machine register successfull
@@ -791,6 +791,21 @@ components:
           enum: [UNKNOWN, WAITING, WORKING, ERROR]
         metrics:
           $ref: '#/components/schemas/MachineMetrics'
+    MachineRequest:
+      type: object
+      properties:
+        cpus:
+          type: integer
+        gpu:
+          type: integer
+        memory:
+          type: integer
+        localStorage:
+          type: integer
+        supplierId:
+          type: string
+        name:
+          type: string
     MachineMetrics:
       type: object
       properties:
