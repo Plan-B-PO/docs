@@ -12,12 +12,10 @@ ___WARUNKI POCZĄTKOWE:___
 
 1. __App User__ wybiera "Show details" przy "Test Task 1".
 2. System wyświetla:
-    - konfigurację CT:
-        ```
-        @TODO
-        ```
+    - konfigurację CT
     - aktualny status: ""
     
+
 ___WARUNKI SUKCESU:___
 
 - Pojawia się konfiguaracja CT.
@@ -32,10 +30,7 @@ ___WARUNKI POCZĄTKOWE:___
 
 1. __App User__ wybiera "Show details" przy "Test Task 2".
 2. System wyświetla:
-    - konfigurację CT:
-        ```
-        @TODO
-        ```
+    - konfigurację CT
     - aktualny status: "Working"
     - aktualne logi:
         ```
@@ -44,6 +39,7 @@ ___WARUNKI POCZĄTKOWE:___
         WAITING FOREVER
         ```
     
+
 ___WARUNKI SUKCESU:___
 
 - Pojawia się konfiguracja CT.
@@ -56,10 +52,7 @@ ___WARUNKI SUKCESU:___
 
 1. __App User__ wybiera "Show details" przy "Test Task 3".
 2. System wyświetla:
-    - konfigurację CT:
-        ```
-        @TODO
-        ```
+    - konfigurację CT
     - aktualny status: "Completed"
     - aktualne logi:
         ```
@@ -69,6 +62,7 @@ ___WARUNKI SUKCESU:___
         <anything>
         ```
     
+
 ___WARUNKI SUKCESU:___
 
 - Pojawia się konfiguracja CT.
