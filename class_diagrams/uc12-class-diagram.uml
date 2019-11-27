@@ -1,0 +1,41 @@
+@startuml
+Parameters -- Machine
+Machine "0...*" --o "1" Machines
+Machines .> MachineManager
+Machines ..> IShowMachineHandling
+skinparam classAttributeIconSize 0
+class Parameters {
+  @Entity
+- int current
+- int max
+}
+class Machine {
+  @Entity
+- string id
+- string name
+- string token
+- Parameters cpus
+- Parameters gpus
+- Parameters memory
+- Parameters localStorage
+- boolean status
++ getId(): string
++ getName(): string
++ getToken(): string
++ getCpus(): Parameters
++ getGpus(): Parameters
++ getMemory(): Parameters
++ getLocalStorage(): Parameters
++ getStatus(): boolean
+}
+class Machines {
++ string machineId
++ getMachine(machineId : String) : Machine
+}
+class MachineManager << @Endpoint  >> {
++ /machine-manager/machines/(machineId : String) : Machine
+}
+object IShowMachineHandling {
+ + showMachine()
+}
+@enduml
