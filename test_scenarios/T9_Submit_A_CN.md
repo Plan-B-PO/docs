@@ -36,12 +36,12 @@ ___WARUNKI POCZĄTKOWE:___
 1. __Supplier__ uruchamia na maszynie rejestrację z poprawnie
 ustawionym tokenem i parametrami od `mashineT9_2`.
 2. System wypisuje w outpucie po pewnym czasie 
-informację "Authentication denied".
+informację "Unknown".
 3. W detalach maszyny `mashineT9_2` __Supplier__ odświeża stronę.  
 
 ___WARUNKI SUKCESU:___
 
-- Wyświetlona została informacja "Authentication denied".
+- Wyświetlona została informacja "Unknown".
 - Po odświeżenie, System wyświetlił status "Declared" maszyny.
 
 #### 3. Próba rejestracji z tokenem zarejestrowanej już maszyny.
@@ -55,13 +55,13 @@ ___WARUNKI POCZĄTKOWE:___
 1. __Supplier__ uruchamia na maszynie rejestrację z poprawnie
 ustawionym tokenem i parametrami od `mashineT9_4`.
 2. System wypisuje w outpucie po pewnym czasie 
-informację "Authentication denied".
+informację "Unknown".
 3. W detalach maszyny `mashineT9_3` __Supplier__ odświeża stronę.  
 
 ___WARUNKI SUKCESU:___
 
-- Wyświetlona została informacja "Authentication denied".
-- Po odświeżenie, System wyświetlił status "Unknown" maszyny.
+- Wyświetlona została informacja "Unknown".
+- Po odświeżenie, System wyświetlił status "Declared" maszyny.
 
 #### 4. Próba rejestracji z zawyżonymi parametrami.
 
