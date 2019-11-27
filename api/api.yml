@@ -138,7 +138,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/Log'
       
-  /launcher/app-user/applications:
+  /launcher/app-user/cockpit:
     get:
       tags:
       - launcher
@@ -165,7 +165,7 @@ paths:
       responses:
         '201':
           description: Application added
-  /launcher/app-user/applications/{id}:
+  /launcher/app-user/cockpit/{id}:
     delete:
         tags:
         - launcher
@@ -354,6 +354,27 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Machine'
+    post:
+      tags:
+      - machine manager
+      summary: machine register
+      operationId: registerMachine
+      security:
+      - OAuth2: [supplier]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Machine'
+      responses:
+        '201':
+          description: Machine register successfull
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: 152623621625326
   /machine-manager/management/machines/{id}:
     get:
       tags:
@@ -395,29 +416,6 @@ paths:
           description: machine deleted
         '400':
           description: validation error
-
-  /machine-manager/machines:
-    post:
-      tags:
-      - machine manager
-      summary: initial machine register
-      operationId: registerMachine
-      security:
-      - MachineAuth: []
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/MachineMetrics'
-      responses:
-        '201':
-          description: machine register successfull
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: 152623621625326
 
   /machine-manager/machines/status/{id}:
     post:
