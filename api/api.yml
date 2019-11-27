@@ -354,29 +354,6 @@ paths:
                 type: array
                 items:
                   $ref: '#/components/schemas/Machine'
-    post:
-      tags:
-      - machine manager
-      summary: create machine
-      operationId: createMachine
-      security:
-      - OAuth2: [supplier]
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              type: object
-              properties:
-                token:
-                  type: string
-                  description: Machine token
-      responses:
-        '201':
-          description: machine created successfully
-        '400':
-          description: validation error
-
   /machine-manager/management/machines/{id}:
     get:
       tags:
@@ -811,6 +788,9 @@ components:
         supplierId: 
           type: string
           example: 12345643
+        status:
+          type: string
+          enum: [UNKNOWN, WAITING, WORKING, ERROR]
         metrics:
           $ref: '#/components/schemas/MachineMetrics'
     MachineMetrics:
