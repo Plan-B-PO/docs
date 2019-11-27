@@ -45,7 +45,7 @@ paths:
     get:
       tags:
       - launcher
-      summary: gets all computations
+      summary: gets my computations
       operationId: listComputations
       responses:
         '200':
@@ -71,11 +71,29 @@ paths:
         '200':
           description: Application ran successfully
   /launcher/app-user/computations/{id}:
+    get:
+      tags:
+      - launcher
+      summary: Get computation details
+      operationId: getComputationDetails
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      responses:
+        '200':
+          description: computation details
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComputationDetails'
     delete:
       tags: 
       - launcher
-      summary: stopComputation
-      operationId: stopComputatuin
+      summary: Stop computation
+      operationId: stopComputation
       parameters:
       - in: path
         name: id
@@ -85,6 +103,145 @@ paths:
       responses:
         '200':
           description: computation stopped
+  /launcher/app-user/computations/{id}/logs:
+    get:
+      tags:
+      - launcher
+      operationId: getComputationLogs
+      security:
+      - OAuth2: [appuser]
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      - in: query
+        name: from
+        schema:
+          type: string
+      - in: query
+        name: to
+        schema:
+          type: string
+      - in: query
+        name: filter
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Logs array
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Log'
+      
+  /launcher/app-user/cockpit:
+    get:
+      tags:
+      - launcher
+      summary: Get applications in cockpit
+      responses:
+        '200':
+          description: Applications list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ComputationApplication'
+    post:
+      tags:
+      - launcher
+      summary: Add application to cockpit
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ApplicationRequest'
+      responses:
+        '201':
+          description: Application added
+  /launcher/app-user/cockpit/{id}:
+    delete:
+        tags:
+        - launcher
+        summary: Remove application from cockpit
+        operationId: removeApplicationFromCockpit
+        parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+        responses:
+          '200':
+            description: Application removed
+  /launcher/app-user/rack:
+    get:
+      tags:
+      - launcher
+      summary: Get Computation Rack
+      operationId: getComputationRack
+      responses:
+        '200':
+          description: Computations list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ComputationTask'
+    post:
+      tags:
+      - launcher
+      summary: Add to Computation Rack
+      operationId: addToComputationRack
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ComputationTask'
+      responses:
+        '201':
+          description: CT successfully added
+  /launcher/app-user/rack/{id}:
+    get:
+        tags:
+        - launcher
+        summary: Show CT details
+        operationId: showTaskDetails
+        parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+        responses:
+          '200':
+            description: Task details
+            content:
+              application/json:
+                schema:
+                    $ref: '#/components/schemas/ComputationTask'
+    delete:
+        tags:
+        - launcher
+        summary: Remove CT from Computation Rack
+        operationId: removeTaskFromComputationRack
+        parameters:
+        - in: path
+          name: id
+          schema:
+            type: string
+          required: true
+        responses:
+          '200':
+            description: Task removed
   /library/launcher/applications:
     get:
       tags:
@@ -147,6 +304,24 @@ paths:
         '400':
           description: no machine is available
   /machine-manager/launcher/computations/{id}:
+    get:
+      tags:
+      - machine manager
+      summary: get computation status
+      operationId: getComputationStatus
+      parameters:
+      - in: path
+        name: id
+        schema:
+          type: string
+        required: true
+      responses:
+        '200':
+          description: computation status
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ComputationStatus'
     delete:
       tags:
       - machine manager
@@ -182,8 +357,8 @@ paths:
     post:
       tags:
       - machine manager
-      summary: create machine
-      operationId: createMachine
+      summary: machine register
+      operationId: registerMachine
       security:
       - OAuth2: [supplier]
       requestBody:
@@ -191,17 +366,15 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              properties:
-                token:
-                  type: string
-                  description: Machine token
+              $ref: '#/components/schemas/MachineRequest'
       responses:
         '201':
-          description: machine created successfully
-        '400':
-          description: validation error
-
+          description: Machine register successfull
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: 152623621625326
   /machine-manager/management/machines/{id}:
     get:
       tags:
@@ -244,34 +417,11 @@ paths:
         '400':
           description: validation error
 
-  /machine-manager/machines:
-    post:
-      tags:
-      - machine manager
-      summary: initial machine register
-      operationId: registerMachine
-      security:
-      - MachineAuth: []
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/MachineMetrics'
-      responses:
-        '201':
-          description: machine register successfull
-          content:
-            text/plain:
-              schema:
-                type: string
-                example: 152623621625326
-
   /machine-manager/machines/status/{id}:
     post:
       tags:
       - machine manager
-      summary: report machine metrics
+      summary: Report machine metrics. It is used to register machine state in machine manager.
       operationId: bumpMachine
       security:
       - MachineAuth: []
@@ -289,7 +439,9 @@ paths:
               $ref: '#/components/schemas/MachineMetrics'
       responses:
         '200':
-          description: metrics reported successfully
+          description: Metrics reported successfully
+        '401':
+          description: Invalid token
 
   /machine/status:
     get:
@@ -403,6 +555,12 @@ paths:
       responses:
         '200':
           description: Logs array
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Log'
 
 
   /queue/topics:
@@ -628,8 +786,26 @@ components:
         supplierId: 
           type: string
           example: 12345643
+        status:
+          type: string
+          enum: [UNKNOWN, WAITING, WORKING, ERROR]
         metrics:
           $ref: '#/components/schemas/MachineMetrics'
+    MachineRequest:
+      type: object
+      properties:
+        cpus:
+          type: integer
+        gpu:
+          type: integer
+        memory:
+          type: integer
+        localStorage:
+          type: integer
+        supplierId:
+          type: string
+        name:
+          type: string
     MachineMetrics:
       type: object
       properties:
@@ -668,3 +844,37 @@ components:
         step:
           type: string
           example: step1
+    ApplicationRequest:
+      type: object
+      required:
+      - id
+      properties:
+        id:
+          type: string
+          example: 3142
+    Log:
+      type: object
+      required:
+      - timestamp
+      - message
+      - level
+      properties:
+        timestamp:
+          type: string
+        message:
+          type: string
+        level:
+          type: string
+          enum: [INFO, WARN, ERROR, DEBUG, TRACE]
+    ComputationStatus:
+      type: object
+      required:
+      - status
+      properties:
+        statuss:
+          type: string
+          enum: [WAITING, IN_PROGRESS, CANCELED, DONE]
+    ComputationDetails:
+      allOf:
+        - $ref: '#/components/schemas/ComputationTask'
+        - $ref: '#/components/schemas/ComputationStatus'
