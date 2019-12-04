@@ -1,0 +1,40 @@
+@startuml
+
+object "testApp03 : ComputationApplication" as testApp03 {
+    id = 20703
+    name = "Test App 03"
+    description = "Loop test app"
+    icon = "https://blog.hubspot.com/hs-fs/hub/53/file-23117129-png/blog/images/closed-loop-marketing.png"
+}
+
+object "testTaskT7_1 : ComputationTask" as testTaskT7_1 {
+    id = 2070101
+    name = "Test Task T7_1"
+    userId = <userT7_2>
+    application = testApp03
+    input = <any>
+}
+
+object "testTaskT7_1_Det : ComputationDetails" as testTaskT7_1_Det {
+    status: "DONE"
+}
+
+testApp03 --o testTaskT7_1
+testTaskT7_1 <|-- testTaskT7_1_Det
+
+object "testTaskT7_2 : ComputationTask" as testTaskT7_2 {
+    id = 2070102
+    name = "Test Task T7_2"
+    userId = <userT7_3>
+    application = testApp03
+    input = <any>
+}
+
+object "testTaskT7_2_Det : ComputationDetails" as testTaskT7_2_Det {
+    status: "IN_PROGRESS"
+}
+
+testApp03 --o testTaskT7_2
+testTaskT7_2 <|-- testTaskT7_2_Det
+
+@enduml
