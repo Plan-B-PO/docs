@@ -14,10 +14,14 @@
     class ComputationRunnable
     class ComputationTopic
     class Computation
+    class ComputationStatus
+    class ComputationDetails
     class Machine
     class MachineMetrics
     class MachineMetricValue
 
+    ComputationDetails <|-- ComputationTask
+    ComputationDetails <|-- ComputationStatus
     ComputationTask *-- ComputationApplication
     ComputationTask o-- ComputationInput
     ComputationApplication o-- "0..*" ComputationStepParam
