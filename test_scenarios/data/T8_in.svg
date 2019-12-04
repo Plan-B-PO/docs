@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="445px" preserveAspectRatio="none" style="width:1513px;height:445px;" version="1.1" viewBox="0 0 1513 445" width="1513px" zoomAndPan="magnify"><defs><filter height="300%" id="f5vzzhts1478s" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="77.4063" style="stroke: #A80036; stroke-width: 1.5;" width="507" x="260" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="195" x="416" y="22.457">testApp03 : ComputationApplication</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="261" x2="766" y1="27.0938" y2="27.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="51" x="266" y="41.4746">id = 20703</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="266" y="54.0527">name = "Test App 03"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="136" x="266" y="66.6309">description = "Loop test app"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="495" x="266" y="79.209">icon = "https://blog.hubspot.com/hs-fs/hub/53/file-23117129-png/blog/images/closed-loop-marketing.png"</text><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="89.9844" style="stroke: #A80036; stroke-width: 1.5;" width="196" x="132.5" y="145"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="182" x="139.5" y="159.457">testTaskT8_1 : ComputationTask</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="133.5" x2="327.5" y1="164.0938" y2="164.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="63" x="138.5" y="178.4746">id = 2080101</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="119" x="138.5" y="191.0527">name = "Test Task T8_1"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="96" x="138.5" y="203.6309">userId = &lt;userT8_1&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="113" x="138.5" y="216.209">application = testApp03</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="128" x="138.5" y="228.7871">input = testTaskT8_1_Input</text><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="39.6719" style="stroke: #A80036; stroke-width: 1.5;" width="230" x="62.5" y="295"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="216" x="69.5" y="309.457">testTaskT8_1_Input : ComputationTask</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="63.5" x2="291.5" y1="314.0938" y2="314.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="60" x="68.5" y="328.4746">logger = null</text><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="89.9844" style="stroke: #A80036; stroke-width: 1.5;" width="196" x="415.5" y="145"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="182" x="422.5" y="159.457">testTaskT8_2 : ComputationTask</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="416.5" x2="610.5" y1="164.0938" y2="164.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="63" x="421.5" y="178.4746">id = 2080201</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="119" x="421.5" y="191.0527">name = "Test Task T8_2"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="96" x="421.5" y="203.6309">userId = &lt;userT8_1&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="113" x="421.5" y="216.209">application = testApp03</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="128" x="421.5" y="228.7871">input = testTaskT8_2_Input</text><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="39.6719" style="stroke: #A80036; stroke-width: 1.5;" width="230" x="398.5" y="295"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="216" x="405.5" y="309.457">testTaskT8_2_Input : ComputationTask</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="399.5" x2="627.5" y1="314.0938" y2="314.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="60" x="404.5" y="328.4746">logger = null</text><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="39.6719" style="stroke: #A80036; stroke-width: 1.5;" width="234" x="663.5" y="295"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="220" x="670.5" y="309.457">testTaskT8_2_Det : ComputationDetails</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="664.5" x2="896.5" y1="314.0938" y2="314.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="114" x="669.5" y="328.4746">status: "IN_PROGRESS"</text><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="89.9844" style="stroke: #A80036; stroke-width: 1.5;" width="196" x="936.5" y="145"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="182" x="943.5" y="159.457">testTaskT8_3 : ComputationTask</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="937.5" x2="1131.5" y1="164.0938" y2="164.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="63" x="942.5" y="178.4746">id = 2080301</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="119" x="942.5" y="191.0527">name = "Test Task T8_3"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="96" x="942.5" y="203.6309">userId = &lt;userT8_1&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="113" x="942.5" y="216.209">application = testApp03</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="128" x="942.5" y="228.7871">input = testTaskT8_3_Input</text><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="39.6719" style="stroke: #A80036; stroke-width: 1.5;" width="230" x="1003.5" y="295"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="216" x="1010.5" y="309.457">testTaskT8_3_Input : ComputationTask</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1004.5" x2="1232.5" y1="314.0938" y2="314.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="60" x="1009.5" y="328.4746">logger = null</text><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="39.6719" style="stroke: #A80036; stroke-width: 1.5;" width="234" x="1268.5" y="295"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="220" x="1275.5" y="309.457">testTaskT8_3_Det : ComputationDetails</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="1269.5" x2="1501.5" y1="314.0938" y2="314.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="69" x="1274.5" y="328.4746">status: "DONE"</text><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="35.0938" style="stroke: #A80036; stroke-width: 1.5;" width="190" x="250.5" y="397.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="176" x="257.5" y="411.957">computationT8_2 : Computation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="251.5" x2="439.5" y1="416.5938" y2="416.5938"/><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="35.0938" style="stroke: #A80036; stroke-width: 1.5;" width="190" x="855.5" y="397.5"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="176" x="862.5" y="411.957">computationT8_3 : Computation</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="856.5" x2="1044.5" y1="416.5938" y2="416.5938"/><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="39.6719" style="stroke: #A80036; stroke-width: 1.5;" width="209" x="6" y="395"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="195" x="13" y="409.457">computationT8_2_Logs : List&lt;Log&gt;</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="214" y1="414.0938" y2="414.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="190" x="12" y="428.4746">&lt;contains messages ["APP STARTED"]&gt;</text><rect fill="#FEFECE" filter="url(#f5vzzhts1478s)" height="39.6719" style="stroke: #A80036; stroke-width: 1.5;" width="305" x="515" y="395"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="195" x="570" y="409.457">computationT8_3_Logs : List&lt;Log&gt;</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="516" x2="819" y1="414.0938" y2="414.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="293" x="521" y="428.4746">&lt;contains messages ["APP STARTED", "APP COMPLETED"]&gt;</text><!--link testApp03 to testTaskT8_1--><path d="M438.404,85.048 C405.302,101.599 365.93,121.285 330.399,139.05 " fill="none" id="testApp03-testTaskT8_1" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="318.511,144.994,325.6665,145.8881,329.2439,139.6269,322.0884,138.7328,318.511,144.994" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testTaskT8_1 to testTaskT8_1_Input--><path d="M206.222,247.342 C198.852,264.447 191.251,282.088 185.721,294.921 " fill="none" id="testTaskT8_1-testTaskT8_1_Input" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="211.515,235.058,205.4674,238.9856,206.7668,246.0786,212.8145,242.1511,211.515,235.058" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testApp03 to testTaskT8_2--><path d="M513.5,85.048 C513.5,99.296 513.5,115.868 513.5,131.537 " fill="none" id="testApp03-testTaskT8_2" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="513.5,144.994,517.5,138.994,513.5,132.994,509.5,138.994,513.5,144.994" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testTaskT8_2 to testTaskT8_2_Det--><path d="M627.447,243.493 C667.112,261.765 709.13,281.122 739.086,294.921 " fill="none" id="testTaskT8_2-testTaskT8_2_Det" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="624.375,249.784,609.139,235.058,630.233,237.069,624.375,249.784" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testTaskT8_2 to testTaskT8_2_Input--><path d="M513.5,248.339 C513.5,265.13 513.5,282.337 513.5,294.921 " fill="none" id="testTaskT8_2-testTaskT8_2_Input" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="513.5,235.058,509.5,241.058,513.5,247.058,517.5,241.058,513.5,235.058" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testApp03 to testTaskT8_3--><path d="M651.751,85.048 C736.706,108.121 844.096,137.288 923.486,158.849 " fill="none" id="testApp03-testTaskT8_3" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="936.476,162.377,931.7341,156.9443,924.8955,159.232,929.6374,164.6647,936.476,162.377" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testTaskT8_3 to testTaskT8_3_Det--><path d="M1151.96,232.163 C1212.43,253.351 1283.25,278.168 1330.91,294.871 " fill="none" id="testTaskT8_3-testTaskT8_3_Det" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="1149.3,238.646,1132.74,225.426,1153.93,225.434,1149.3,238.646" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testTaskT8_3 to testTaskT8_3_Input--><path d="M1071.96,245.849 C1083.95,263.415 1096.45,281.714 1105.47,294.921 " fill="none" id="testTaskT8_3-testTaskT8_3_Input" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#FFFFFF" points="1064.59,235.058,1064.6682,242.2687,1071.3543,244.9698,1071.2761,237.7591,1064.59,235.058" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testTaskT8_2 to computationT8_2--><path d="M441.418,235.237 C419.557,251.666 397.201,271.983 381.5,295 C361.06,324.965 351.943,366.8673 348.09,392.1231 " fill="none" id="testTaskT8_2-computationT8_2" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="347.346,397.2495,352.5979,388.9178,348.0646,392.3014,344.6809,387.7681,347.346,397.2495" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testTaskT8_3 to computationT8_3--><path d="M1012.45,235.212 C1003.772,253.477 994.092,275.016 986.5,295 C973.832,328.342 962.519,368.2226 956.089,392.3083 " fill="none" id="testTaskT8_3-computationT8_3" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="954.792,397.2001,960.9646,389.5255,956.0732,392.367,953.2317,387.4756,954.792,397.2001" style="stroke: #A80036; stroke-width: 1.0;"/><!--link computationT8_2_Logs to computationT8_2--><path d="M215.148,415 C225.121,415 235.094,415 245.067,415 " fill="none" id="computationT8_2_Logs-computationT8_2" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="250.282,415,241.282,411,245.282,415,241.282,419,250.282,415" style="stroke: #A80036; stroke-width: 1.0;"/><!--link computationT8_3_Logs to computationT8_3--><path d="M820.055,415 C830.107,415 840.159,415 850.212,415 " fill="none" id="computationT8_3_Logs-computationT8_3" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="855.469,415,846.469,411,850.469,415,846.469,419,855.469,415" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+
+object "testApp03 : ComputationApplication" as testApp03 {
+    id = 20703
+    name = "Test App 03"
+    description = "Loop test app"
+    icon = "https://blog.hubspot.com/hs-fs/hub/53/file-23117129-png/blog/images/closed-loop-marketing.png"
+}
+
+object "testTaskT8_1 : ComputationTask" as testTaskT8_1 {
+    id = 2080101
+    name = "Test Task T8_1"
+    userId = <userT8_1>
+    application = testApp03
+    input = testTaskT8_1_Input
+}
+
+object "testTaskT8_1_Input : ComputationTask" as testTaskT8_1_Input {
+    logger = null
+}
+
+testApp03 - -o testTaskT8_1
+testTaskT8_1 o- - testTaskT8_1_Input
+
+object "testTaskT8_2 : ComputationTask" as testTaskT8_2 {
+    id = 2080201
+    name = "Test Task T8_2"
+    userId = <userT8_1>
+    application = testApp03
+    input = testTaskT8_2_Input
+}
+
+object "testTaskT8_2_Input : ComputationTask" as testTaskT8_2_Input {
+    logger = null
+}
+
+object "testTaskT8_2_Det : ComputationDetails" as testTaskT8_2_Det {
+    status: "IN_PROGRESS"
+}
+
+testApp03 - -o testTaskT8_2
+testTaskT8_2 <|- - testTaskT8_2_Det
+testTaskT8_2 o- - testTaskT8_2_Input
+
+object "testTaskT8_3 : ComputationTask" as testTaskT8_3 {
+    id = 2080301
+    name = "Test Task T8_3"
+    userId = <userT8_1>
+    application = testApp03
+    input = testTaskT8_3_Input
+}
+
+object "testTaskT8_3_Input : ComputationTask" as testTaskT8_3_Input {
+    logger = null
+}
+
+object "testTaskT8_3_Det : ComputationDetails" as testTaskT8_3_Det {
+    status: "DONE"
+}
+
+testApp03 - -o testTaskT8_3
+testTaskT8_3 <|- - testTaskT8_3_Det
+testTaskT8_3 o- - testTaskT8_3_Input
+
+object "computationT8_2 : Computation" as computationT8_2
+object "computationT8_3 : Computation" as computationT8_3
+
+testTaskT8_2 ...> computationT8_2
+testTaskT8_3 ...> computationT8_3
+
+object "computationT8_2_Logs : List<Log>" as computationT8_2_Logs {
+    <contains messages ["APP STARTED"]>
+}
+
+object "computationT8_3_Logs : List<Log>" as computationT8_3_Logs {
+    <contains messages ["APP STARTED", "APP COMPLETED"]>
+}
+
+computationT8_2_Logs .> computationT8_2
+computationT8_3_Logs .> computationT8_3
+
+@enduml
+
+PlantUML version 1.2018.11(Sat Sep 22 18:43:53 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_152-release-1248-b8
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1250
+Language: pl
+Country: PL
+--></g></svg>
