@@ -19,7 +19,7 @@ ___WARUNKI POCZĄTKOWE:___
     - konfigurację CT
       ```json
       {
-        "logger": "null|default"
+        "logger": "null" | "default"
       }
       ```
     - aktualny status: ""
@@ -42,7 +42,7 @@ ___WARUNKI POCZĄTKOWE:___
     - konfigurację CT
       ```json
       {
-        "logger": "null|default"
+        "logger": "null" | "default"
       }
       ```
     - aktualny status: "IN PROGRESS"
@@ -67,7 +67,7 @@ ___WARUNKI SUKCESU:___
     - konfigurację CT
       ```json
       {
-        "logger": "null|default"
+        "logger": "null" | "default"
       }
       ```
     - aktualny status: "DONE"
