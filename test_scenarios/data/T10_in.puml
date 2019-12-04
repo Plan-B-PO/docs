@@ -1,0 +1,94 @@
+@startuml
+
+object "machine01 : Machine" as machine01 {
+    id = "machineT10_1"
+    name = "Machine 01"
+    supplierId = <userT10_1>
+    metrics = Copy.of(offMetrics)
+    status = UNKNOWN
+}
+
+object "machine02 : Machine" as machine02 {
+    id = "machineT10_2"
+    name = "Machine 02"
+    supplierId = <userT10_1>
+    metrics = Copy.of(runMetrics)
+    status = WAITING
+}
+
+object "machine01 : Machine" as machine03 {
+    id = "machineT10_3"
+    name = "Machine 03"
+    supplierId = <userT10_1>
+    metrics = Copy.of(runMetrics)
+    status = WORKING
+}
+
+machine01 o-- offMetrics
+machine02 o-- runMetrics
+machine03 o-- runMetrics
+
+object "offMetrics : Metrics" as offMetrics {
+    cpus = offCpus
+    gpus = offGpus
+    memory = offMemory
+    localStorage = offLocalStorage
+}
+
+object "offCpus : MachineMetricValue" as offCpus {
+    current: 0
+    max: 8
+}
+object "offGpus : MachineMetricValue" as offGpus {
+    current: 0
+    max: 4
+}
+
+object "offMemory : MachineMetricValue" as offMemory {
+    current: 0
+    max: 32
+}
+
+object "offLocalStorage : MachineMetricValue" as offLocalStorage {
+    current: 0
+    max: 64
+}
+
+offMetrics o-- offCpus
+offMetrics o-- offGpus
+offMetrics o-- offMemory
+offMetrics o-- offLocalStorage
+
+object "runMetrics : Metrics" as runMetrics {
+    cpus = runCpus
+    gpus = runGpus
+    memory = runMemory
+    localStorage = runLocalStorage
+}
+
+object "runCpus : MachineMetricValue" as runCpus {
+    current:0~8
+    max: 8
+}
+object "runGpus : MachineMetricValue" as runGpus {
+    current: 0~4
+    max: 4
+}
+
+object "runMemory : MachineMetricValue" as runMemory {
+    current: 0~32
+    max: 32
+}
+
+object "runLocalStorage : MachineMetricValue" as runLocalStorage {
+    current: 0~64
+    max: 64
+}
+
+
+runMetrics o-- runCpus
+runMetrics o-- runGpus
+runMetrics o-- runMemory
+runMetrics o-- runLocalStorage
+
+@enduml
