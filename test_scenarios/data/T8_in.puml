@@ -1,0 +1,82 @@
+@startuml
+
+object "testApp03 : ComputationApplication" as testApp03 {
+    id = 20703
+    name = "Test App 03"
+    description = "Loop test app"
+    icon = "https://blog.hubspot.com/hs-fs/hub/53/file-23117129-png/blog/images/closed-loop-marketing.png"
+}
+
+object "testTaskT8_1 : ComputationTask" as testTaskT8_1 {
+    id = 2080101
+    name = "Test Task T8_1"
+    userId = <userT8_1>
+    application = testApp03
+    input = testTaskT8_1_Input
+}
+
+object "testTaskT8_1_Input : ComputationTask" as testTaskT8_1_Input {
+    logger = null
+}
+
+testApp03 --o testTaskT8_1
+testTaskT8_1 o-- testTaskT8_1_Input
+
+object "testTaskT8_2 : ComputationTask" as testTaskT8_2 {
+    id = 2080201
+    name = "Test Task T8_2"
+    userId = <userT8_1>
+    application = testApp03
+    input = testTaskT8_2_Input
+}
+
+object "testTaskT8_2_Input : ComputationTask" as testTaskT8_2_Input {
+    logger = null
+}
+
+object "testTaskT8_2_Det : ComputationDetails" as testTaskT8_2_Det {
+    status: "IN_PROGRESS"
+}
+
+testApp03 --o testTaskT8_2
+testTaskT8_2 <|-- testTaskT8_2_Det
+testTaskT8_2 o-- testTaskT8_2_Input
+
+object "testTaskT8_3 : ComputationTask" as testTaskT8_3 {
+    id = 2080301
+    name = "Test Task T8_3"
+    userId = <userT8_1>
+    application = testApp03
+    input = testTaskT8_3_Input
+}
+
+object "testTaskT8_3_Input : ComputationTask" as testTaskT8_3_Input {
+    logger = null
+}
+
+object "testTaskT8_3_Det : ComputationDetails" as testTaskT8_3_Det {
+    status: "DONE"
+}
+
+testApp03 --o testTaskT8_3
+testTaskT8_3 <|-- testTaskT8_3_Det
+testTaskT8_3 o-- testTaskT8_3_Input
+
+object "computationT8_2 : Computation" as computationT8_2
+object "computationT8_3 : Computation" as computationT8_3
+
+testTaskT8_2 ...> computationT8_2
+testTaskT8_3 ...> computationT8_3
+
+object "computationT8_2_Logs : List<Log>" as computationT8_2_Logs {
+    <contains messages ["APP STARTED"]>
+}
+
+object "computationT8_3_Logs : List<Log>" as computationT8_3_Logs {
+    <contains messages ["APP STARTED", "APP COMPLETED"]>
+}
+
+computationT8_2_Logs .> computationT8_2
+computationT8_3_Logs .> computationT8_3
+
+@enduml
