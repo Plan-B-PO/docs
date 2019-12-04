@@ -4,13 +4,13 @@
 
 ### Dane początkowe
 
-@TODO
-
-### Przypadki testowe
+![T7_in](data/T7_in.svg)
 
 ### Warunki Początkowe
 
 - Strona startowa to strona logowania.
+
+### Przypadki testowe
 
 #### 1. Otwarcie kokpitu bez zapamiętanych tasków
 
@@ -21,12 +21,16 @@ ___WARUNKI POCZĄTKOWE:___
         userT7_1 / pass
     ```
 2. System wyświetla kokpit zawierający następujące komponenty:
-    - Własne, zapisane Aplikacje:
-        - `testApp01`
-            - name
-            - icon
-            - description
-    - Przycisk "Create new task"
+    - Własne, zapisane Aplikacje wraz z przyciskami "Create new Task":
+      ```json
+      { 
+        "testApp03": {
+          "name": "Test App 03",
+          "icon": "Loop test app",
+          "description": "https://blog.hubspot.com/hs-fs/hub/53/file-23117129-png/blog/images/closed-loop-marketing.png"
+        }
+      }
+      ```
 
 ___WARUNEK SUKCESU:___
 
@@ -35,29 +39,35 @@ ___WARUNEK SUKCESU:___
 
 #### 2. Otwarcie kokpitu ze zdefiniowanymi taskami
 
-___WARUNKI POCZĄTKOWE:___
-
 1. __App User__ wprowadza dane logowania:
     ```
         userT7_2 / pass
     ```
 2. System wyświetla kokpit zawierający następujące komponenty:
-    - Własne, zapisane Aplikacje:
-        - `testApp01`
-            - name
-            - icon
-            - description
-    - Przycisk "Create new task"
-    - Własne CT:
-        - `testTask01`
-            - name
-            - \<przyciski akcji\>
-            - status: "Completed"
+    - Własne, zapisane Aplikacje wraz z przyciskami "Create new Task":
+      ```json
+       { 
+         "testApp03": {
+           "name": "Test App 03",
+           "icon": "Loop test app",
+           "description": "https://blog.hubspot.com/hs-fs/hub/53/file-23117129-png/blog/images/closed-loop-marketing.png"
+         }
+       }
+       ```
+    - Własne CT wraz z widoczną nazwą i statusami:
+      ```json
+      { 
+        "testTaskT7_1": {
+          "name": "Test Task T7_1",
+          "status": "DONE"
+        }  
+      }
+      ```
 
 ___WARUNEK SUKCESU:___
 
 - Został wyświetlony Application Shelf.
-- Został wyświetlony CT o statusie "Completed"
+- Został wyświetlony CT o statusie "DONE"
 
 #### 3. Otwarcie kokpitu z uruchomionymi taskami
 
@@ -66,19 +76,27 @@ ___WARUNEK SUKCESU:___
         userT7_3 / pass
     ```
 2. System wyświetla kokpit zawierający następujące komponenty:
-    - Własne, zapisane Aplikacje:
-        - `testApp03`
-            - name
-            - icon
-            - description
-    - Przycisk "Create new task"
-    - Własne CT:
-        - `testTask04`
-            - name
-            - \<przyciski akcji\>
-            - status: "Running"
+    - Własne, zapisane Aplikacje wraz z przyciskami "Create new Task":
+      ```json
+       { 
+         "testApp03": {
+           "name": "Test App 03",
+           "icon": "Loop test app",
+           "description": "https://blog.hubspot.com/hs-fs/hub/53/file-23117129-png/blog/images/closed-loop-marketing.png"
+         }
+       }
+       ```
+    - Własne CT wraz z widoczna nazwą i statusami:
+      ```json
+      { 
+        "testTaskT7_2": {
+          "name": "Test Task T7_2",
+          "status": "IN PROGRESS"
+        }  
+      }
+      ```
 
 ___WARUNEK SUKCESU:___
 
 - Został wyświetlony Application Shelf.
-- Został wyświetlony CT o statusie "Running"
+- Został wyświetlony CT o statusie "IN PROGRESS"
