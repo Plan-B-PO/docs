@@ -5,6 +5,4 @@ SP: App User znajduje się w CC
 2. System pobiera szczegóły wybranego CT <<*data*>>
 3. System wyświetla szczegóły wybranego CT<<*screen*>>
 
-![alt text][views]
-
-[views]: https://github.com/Plan-B-PO/docs/blob/master/scripts/Scenopis_UC10.png?raw=true "Computation Task Details"
+![Computation Task Details](../scripts/Scenopis_UC10.png)
