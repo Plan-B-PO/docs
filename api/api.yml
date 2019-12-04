@@ -871,7 +871,7 @@ components:
       required:
       - status
       properties:
-        statuss:
+        status:
           type: string
           enum: [WAITING, IN_PROGRESS, CANCELED, DONE]
     ComputationDetails:
