@@ -1,0 +1,43 @@
+@startuml
+
+object "abstractMachine : Machine" as machine {
+    id: abstract
+    name: abstract
+    supplierId = <userT10_1>
+    metrics = <any>
+    status = UNKNOWN
+}
+
+object "machine01 : Machine" as machine01 {
+    id = "machineT9_1"
+    name = "Machine 01"
+}
+
+object "machine02 : Machine" as machine02 {
+    id = "machineT9_2"
+    name = "Machine 02"
+}
+
+object "machine03 : Machine" as machine03 {
+    id = "machineT9_3"
+    name = "Machine 03"
+}
+
+object "machine04 : Machine" as machine04 {
+    id = "machineT9_4"
+    name = "Machine 04"
+    status = "WAITING"
+}
+
+object "machine05 : Machine" as machine05 {
+    id = "machineT9_5"
+    name = "Machine 05"
+}
+
+machine <|-- machine01
+machine <|-- machine02
+machine <|-- machine03
+machine <|-- machine04
+machine <|-- machine05
+
+@enduml

@@ -2,7 +2,9 @@
 
 ## T9 Submit a new CN
 
-### Warunki początkowe 
+### Dane początkowe 
+
+![T9_in](data/T9_in.svg)
 
 ### Przypadki testowe
 
@@ -23,7 +25,7 @@ informację "Successfully submited".
 ___WARUNKI SUKCESU:___
 
 - Wyświetlona została informacja "Successfully submited".
-- Po odświeżenie, System wyświetlił status "Waiting" maszyny.
+- Po odświeżenie, System wyświetlił status "WAITING" maszyny.
 
 #### 2. Próba rejestracji z błędnym tokenem.
 
@@ -42,7 +44,7 @@ informację "Unknown".
 ___WARUNKI SUKCESU:___
 
 - Wyświetlona została informacja "Unknown".
-- Po odświeżenie, System wyświetlił status "Declared" maszyny.
+- Po odświeżenie, System wyświetlił status "UNKNOWN" maszyny.
 
 #### 3. Próba rejestracji z tokenem zarejestrowanej już maszyny.
 
@@ -61,7 +63,7 @@ informację "Unknown".
 ___WARUNKI SUKCESU:___
 
 - Wyświetlona została informacja "Unknown".
-- Po odświeżenie, System wyświetlił status "Declared" maszyny.
+- Po odświeżenie, System wyświetlił status "UNKNOWN" maszyny.
 
 #### 4. Próba rejestracji z zawyżonymi parametrami.
 
@@ -72,7 +74,7 @@ ___WARUNKI POCZĄTKOWE:___
 - __Supplier__ znajduje się w detalach maszyny `mashineT9_5`. 
 
 1. __Supplier__ uruchamia na maszynie rejestrację z poprawnie
-ustawionym tokenem i parametrami od `mashineT9_4`.
+ustawionym tokenem i parametrami od `mashineT9_5`.
 2. System wypisuje w outpucie po pewnym czasie 
 informację "Verification failed".
 3. W detalach maszyny `mashineT9_5` __Supplier__ odświeża stronę.  
@@ -80,4 +82,4 @@ informację "Verification failed".
 ___WARUNKI SUKCESU:___
 
 - Wyświetlona została informacja "Verification failed".
-- Po odświeżenie, System wyświetlił status "Verification failed" maszyny.
+- Po odświeżenie, System wyświetlił status "UNKNOWN" maszyny.

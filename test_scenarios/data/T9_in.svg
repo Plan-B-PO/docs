@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="221px" preserveAspectRatio="none" style="width:812px;height:221px;" version="1.1" viewBox="0 0 812 221" width="812px" zoomAndPan="magnify"><defs><filter height="300%" id="f9yvlff67zmuy" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#f9yvlff67zmuy)" height="89.9844" style="stroke: #A80036; stroke-width: 1.5;" width="159" x="324" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="145" x="331" y="22.457">abstractMachine : Machine</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="325" x2="482" y1="27.0938" y2="27.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="52" x="330" y="41.4746">id: abstract</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="70" x="330" y="54.0527">name: abstract</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="120" x="330" y="66.6309">supplierId = &lt;userT10_1&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="75" x="330" y="79.209">metrics = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="90" x="330" y="91.7871">status = UNKNOWN</text><rect fill="#FEFECE" filter="url(#f9yvlff67zmuy)" height="52.25" style="stroke: #A80036; stroke-width: 1.5;" width="131" x="6" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="117" x="13" y="172.457">machine01 : Machine</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="136" y1="177.0938" y2="177.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="96" x="12" y="191.4746">id = "machineT9_1"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="12" y="204.0527">name = "Machine 01"</text><rect fill="#FEFECE" filter="url(#f9yvlff67zmuy)" height="52.25" style="stroke: #A80036; stroke-width: 1.5;" width="131" x="172" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="117" x="179" y="172.457">machine02 : Machine</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="173" x2="302" y1="177.0938" y2="177.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="96" x="178" y="191.4746">id = "machineT9_2"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="178" y="204.0527">name = "Machine 02"</text><rect fill="#FEFECE" filter="url(#f9yvlff67zmuy)" height="52.25" style="stroke: #A80036; stroke-width: 1.5;" width="131" x="338" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="117" x="345" y="172.457">machine03 : Machine</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="339" x2="468" y1="177.0938" y2="177.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="96" x="344" y="191.4746">id = "machineT9_3"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="344" y="204.0527">name = "Machine 03"</text><rect fill="#FEFECE" filter="url(#f9yvlff67zmuy)" height="52.25" style="stroke: #A80036; stroke-width: 1.5;" width="131" x="504" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="117" x="511" y="172.457">machine04 : Machine</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="505" x2="634" y1="177.0938" y2="177.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="96" x="510" y="191.4746">id = "machineT9_4"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="510" y="204.0527">name = "Machine 04"</text><rect fill="#FEFECE" filter="url(#f9yvlff67zmuy)" height="52.25" style="stroke: #A80036; stroke-width: 1.5;" width="131" x="670" y="158"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="117" x="677" y="172.457">machine05 : Machine</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="671" x2="800" y1="177.0938" y2="177.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="96" x="676" y="191.4746">id = "machineT9_5"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="676" y="204.0527">name = "Machine 05"</text><!--link machine to machine01--><path d="M305.176,92.204 C250.486,113.4542 183.971,139.2988 135.913,157.9722 " fill="none" id="machine-machine01" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="302.8,85.618,323.978,84.899,307.871,98.667,302.8,85.618" style="stroke: #A80036; stroke-width: 1.0;"/><!--link machine to machine02--><path d="M330.783,110.5088 C309.431,127.1021 287.156,144.4121 269.729,157.9542 " fill="none" id="machine-machine02" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="326.749,104.779,346.837,98.034,335.34,115.8332,326.749,104.779" style="stroke: #A80036; stroke-width: 1.0;"/><!--link machine to machine03--><path d="M403.5,118.353 C403.5,132.44 403.5,146.5363 403.5,157.9542 " fill="none" id="machine-machine03" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="396.5,118.0337,403.5,98.034,410.5,118.0336,396.5,118.0337" style="stroke: #A80036; stroke-width: 1.0;"/><!--link machine to machine04--><path d="M476.217,110.5088 C497.569,127.1021 519.844,144.4121 537.271,157.9542 " fill="none" id="machine-machine04" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="471.66,115.8332,460.163,98.034,480.251,104.779,471.66,115.8332" style="stroke: #A80036; stroke-width: 1.0;"/><!--link machine to machine05--><path d="M501.824,92.204 C556.514,113.4542 623.029,139.2988 671.087,157.9722 " fill="none" id="machine-machine05" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="none" points="499.129,98.667,483.022,84.899,504.2,85.618,499.129,98.667" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+
+object "abstractMachine : Machine" as machine {
+    id: abstract
+    name: abstract
+    supplierId = <userT10_1>
+    metrics = <any>
+    status = UNKNOWN
+}
+
+object "machine01 : Machine" as machine01 {
+    id = "machineT9_1"
+    name = "Machine 01"
+}
+
+object "machine02 : Machine" as machine02 {
+    id = "machineT9_2"
+    name = "Machine 02"
+}
+
+object "machine03 : Machine" as machine03 {
+    id = "machineT9_3"
+    name = "Machine 03"
+}
+
+object "machine04 : Machine" as machine04 {
+    id = "machineT9_4"
+    name = "Machine 04"
+}
+
+object "machine05 : Machine" as machine05 {
+    id = "machineT9_5"
+    name = "Machine 05"
+}
+
+machine <|- - machine01
+machine <|- - machine02
+machine <|- - machine03
+machine <|- - machine04
+machine <|- - machine05
+
+@enduml
+
+PlantUML version 1.2018.11(Sat Sep 22 18:43:53 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_152-release-1248-b8
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1250
+Language: pl
+Country: PL
+--></g></svg>
