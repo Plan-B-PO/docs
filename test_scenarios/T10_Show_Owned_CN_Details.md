@@ -1,6 +1,6 @@
 # Test Scenario
 
-## T4 Show Owned CN Details
+## T10 Show Owned CN Details
 
 ### Dane początkowe
 
@@ -43,7 +43,8 @@
     ```
 3. __Supplier__ naciska na przysik "Show token"
 4. System wyświetla token.
-    
+   
+
 ___WARUNKI SUKCESU:___
 
 - Wyświetliły się zadeklarowane parametry maszyny.
@@ -78,6 +79,7 @@ ___WARUNKI SUKCESU:___
     }
     ```
     
+
 ___WARUNKI SUKCESU:___
 
 - Wyświetliły się zadeklarowane parametry maszyny.
@@ -112,6 +114,7 @@ ___WARUNKI SUKCESU:___
     }
     ```
     
+
 ___WARUNKI SUKCESU:___
 
 - Wyświetliły się zadeklarowane parametry maszyny.
