@@ -1,7 +1,7 @@
 @startuml
 
 object "machine01 : Machine" as machine01 {
-    id = "machineT8_1"
+    id = "machineT10_1"
     name = "Machine 01"
     supplierId = <userT10_1>
     metrics = Copy.of(offMetrics)
@@ -9,7 +9,7 @@ object "machine01 : Machine" as machine01 {
 }
 
 object "machine02 : Machine" as machine02 {
-    id = "machineT8_2"
+    id = "machineT10_2"
     name = "Machine 02"
     supplierId = <userT10_1>
     metrics = Copy.of(runMetrics)
@@ -17,7 +17,7 @@ object "machine02 : Machine" as machine02 {
 }
 
 object "machine01 : Machine" as machine03 {
-    id = "machineT8_3"
+    id = "machineT10_3"
     name = "Machine 03"
     supplierId = <userT10_1>
     metrics = Copy.of(runMetrics)
