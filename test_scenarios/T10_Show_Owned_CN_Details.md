@@ -52,7 +52,7 @@ ___WARUNKI SUKCESU:___
 
 #### 2. Wyświetlenie detali zaakceptiowanej maszyny.
 
-1. __Supplier__ klika przycisk "Details" przy maszynie `mashineT10_1`.
+1. __Supplier__ klika przycisk "Details" przy maszynie "Machine 02".
 2. System wyświetla widok detali maszyny zawierający:
     ```json
     {
@@ -87,11 +87,11 @@ ___WARUNKI SUKCESU:___
 
 #### 3. Wyświetlenie detali uruchomionej maszyny.
 
-1. __Supplier__ klika przycisk "Details" przy maszynie `mashineT10_1`.
+1. __Supplier__ klika przycisk "Details" przy maszynie "Machine 03".
 2. System wyświetla widok detali maszyny zawierający:
     ```json
     {
-      "name": "Machine 02",
+      "name": "Machine 03",
       "metrics": {
         "cpus": {
           "current": 0~8,
