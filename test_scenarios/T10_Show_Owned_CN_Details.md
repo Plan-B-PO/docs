@@ -91,7 +91,7 @@ ___WARUNKI SUKCESU:___
 2. System wyświetla widok detali maszyny zawierający:
     ```json
     {
-      "name": "Machine 02",
+      "name": "Machine 03",
       "metrics": {
         "cpus": {
           "current": 0~8,
