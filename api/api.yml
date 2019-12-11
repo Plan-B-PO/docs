@@ -22,7 +22,7 @@ tags:
 - name: queue
   description: Queue
 - name: auth
-  description: OAuth server
+  description: OAuth server https://auth0.com/
 
 paths:
 
@@ -739,6 +739,84 @@ paths:
         '401':
           $ref: '#/components/responses/InvalidMachineCredentials'
 
+  /auth/authorize:
+    get:
+      tags:
+      - auth
+      operationId: authorize
+      parameters:
+      - in: query
+        name: audience
+        schema:
+          type: string
+      - in: query
+        name: scope
+        schema:
+          type: string
+      - in: query
+        name: response_type
+        schema:
+          type: string
+      - in: query
+        name: client_id
+        schema:
+          type: string
+      - in: query
+        name: state
+        schema:
+          type: string
+      - in: query
+        name: redirect_uri
+        schema:
+          type: string
+      - in: query
+        name: connection
+        schema:
+          type: string
+      - in: query
+        name: prompt
+        schema:
+          type: string
+      responses:
+        '302':
+          description: Redirected with code
+  /auth/oauth/token:
+    post:
+      tags:
+      - auth
+      operationId: getToken
+      requestBody:
+        required: true
+        content:
+          application/x-www-form-urlencoded:
+            schema:
+              type: object
+              properties:
+                grant_type:
+                  type: string
+                client_id:
+                  type: string
+                client_secret:
+                  type: string
+                code:
+                  type: string
+                redirect_uri:
+                  type: string
+              required:
+                - grant_type
+                - client_id
+                - client_secret
+                - code
+      responses:
+        '200':
+          description: Authorized successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenResponse'
+        '401':
+          description: Unauthorized
+  
 servers:
   - url: 'https://virtserver.swaggerhub.com/Velox-Digitis/baltic/1.0.0'
 components:
@@ -1005,3 +1083,23 @@ components:
       allOf:
         - $ref: '#/components/schemas/ComputationTask'
         - $ref: '#/components/schemas/ComputationStatus'
+    TokenResponse:
+      type: object
+      required:
+      - access_token
+      - refresh_token
+      - id_token
+      - token_type
+      - expires_in
+      properties:
+        access_token:
+          type: string
+          enum: [authorization_code, refresh_token]
+        refresh_token:
+          type: string
+        id_token:
+          type: string
+        token_type:
+          type: string
+        expires_in:
+          type: integer
