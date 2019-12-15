@@ -1,14 +1,14 @@
 @startuml
 
 object "testApp01 : ComputationApplication" as testApp01 {
-    id = 10002
+    id = <any>
     name = "Test App 01"
     description = "OK test app"
     icon = "http://www.todayifoundout.com/wp-content/uploads/2010/04/ok.gif"
 }
 
 object ": ComputationStepPackage" as pack {
-    applicationId = 10002
+    applicationId = <any>
     computationSteps = [step]
     version: v1.0.0
 }
@@ -17,14 +17,14 @@ testApp01 <. pack
 
 object "step : ComputationStep" as step {
     params = []
-    artifactUrl = <<app only printing "OK">>
+    artifactUrl = <any app working longer than 5min>>
     - command
 }
 
 pack *- step
 
 object "testTask01 : ComputationTask" as testTask01 {
-    id = 20001
+    id = <any>
     name = "Test Task 01"
     userId = 00001
     application = testApp01
@@ -37,20 +37,5 @@ object "input01 : ComputationInput" as input01 {
 
 testApp01 --o testTask01
 testTask01 o-- input01
-
-object "testTask02 : ComputationTask" as testTask02 {
-    id = 20002
-    name = "Test Task 02"
-    userId = 00001
-    application = testApp01
-    input = input02
-}
-
-object "input02 : ComputationInput" as input02 {
-    logger = "https://non-existing-logger.com"
-}
-
-testApp01 --o testTask02
-testTask02 o-- input02
 
 @enduml

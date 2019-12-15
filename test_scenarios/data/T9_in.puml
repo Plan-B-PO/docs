@@ -3,7 +3,7 @@
 object "abstractMachine : Machine" as machine {
     id: abstract
     name: abstract
-    supplierId = <userT10_1>
+    supplierId = <userT9_1>
     metrics = <any>
     status = UNKNOWN
 }
