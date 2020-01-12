@@ -554,25 +554,6 @@ paths:
                 enum: [waiting, working]
         '401':
           $ref: '#/components/responses/InvalidMachineCredentials'
-
-  /machine/computation:
-    post:
-      tags:
-      - machine
-      summary: run computation on machine
-      operationId: runMachineComputation
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/ComputationRunnable'
-      responses:
-        '201':
-          description: application ran successfully
-        '401':
-          $ref: '#/components/responses/InvalidMachineCredentials'
-
   /machine/computation/{id}:
     get:
       tags:
@@ -596,6 +577,22 @@ paths:
           $ref: '#/components/responses/InvalidMachineCredentials'
         '404':
           $ref: '#/components/responses/EntityNotFoundError'
+    post:
+      tags:
+      - machine
+      summary: run computation on machine
+      operationId: runMachineComputation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ComputationRunnable'
+      responses:
+        '200':
+          description: application ran successfully
+        '401':
+          $ref: '#/components/responses/InvalidMachineCredentials'
     delete:
       tags:
       - machine
