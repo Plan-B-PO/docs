@@ -27,7 +27,7 @@
     ComputationApplication o-- "0..*" ComputationStepParam
     ComputationInput ..> ComputationApplication
     ComputationStepPackage *-- "1..*" ComputationStep
-    ComputationStepPackage ..> ComputationApplication
+    ComputationStepPackage "1" --* ComputationApplication
     ComputationStep o-- "0..*" ComputationStepParam
     ComputationRunnable *-- "1" ComputationStep
     ComputationRunnable o-- ComputationTopic
