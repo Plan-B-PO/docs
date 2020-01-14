@@ -554,7 +554,7 @@ paths:
                 enum: [waiting, working]
         '401':
           $ref: '#/components/responses/InvalidMachineCredentials'
-  /machine/computation/{id}:
+  /machine/computation/{computationId}:
     get:
       tags:
       - machine
@@ -587,7 +587,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/ComputationRunnable'
+              $ref: '#/components/schemas/ComputationTask'
       responses:
         '200':
           description: application ran successfully
@@ -942,21 +942,6 @@ components:
           nullable: true
           example: null
           description: default value when running app
-    ComputationRunnable:
-      type: object
-      required:
-        - id
-        - computationStep
-      properties:
-        id:
-          type: string
-          example: 24352
-        computationStep:
-          $ref: '#/components/schemas/ComputationStep'
-        topic:
-          $ref: '#/components/schemas/ComputationTopic'
-        previousTopic:
-          $ref: '#/components/schemas/ComputationTopic'
     Computation:
       type: object
       required:
