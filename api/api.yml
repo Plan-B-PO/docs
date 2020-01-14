@@ -359,7 +359,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/ComputationStepPackage'
+              $ref: '#/components/schemas/ComputationTask'
       responses:
         '201':
           headers:
@@ -540,7 +540,7 @@ paths:
     post:
       tags:
       - machine manager
-      summary: Report machine metrics. It is used to register machine state in machine manager.
+      summary: Report machine metrics and computing status. It is used to register machine state and computation state in machine manager.
       operationId: bumpMachine
       security:
       - MachineAuth: []
@@ -555,7 +555,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/MachineMetrics'
+              $ref: '#/components/schemas/MachineComputingStatus'
       responses:
         '200':
           description: Metrics reported successfully
@@ -895,6 +895,8 @@ components:
           $ref: '#/components/schemas/ComputationApplication'
         input:
           $ref: '#/components/schemas/ComputationInput'
+        package:
+          $ref: '#/components/schemas/ComputationStepPackage'
     ComputationApplication:
       type: object
       required:
@@ -1003,6 +1005,15 @@ components:
           $ref: '#/components/schemas/ComputationStepPackage'
         input:
           $ref: '#/components/schemas/ComputationInput'
+    MachineComputingStatus:
+      type: object
+      properties:
+        machineMetrics:
+          $ref: '#/components/schemas/MachineMetrics'
+        computationStatuses:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/ComputationStatus'
     Machine:
       type: object
       required:
