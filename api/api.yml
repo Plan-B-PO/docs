@@ -359,7 +359,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/ComputationStepPackage'
+              $ref: '#/components/schemas/ComputationTask'
       responses:
         '201':
           headers:
@@ -869,6 +869,8 @@ components:
           $ref: '#/components/schemas/ComputationApplication'
         input:
           $ref: '#/components/schemas/ComputationInput'
+        package:
+          $ref: '#/components/schemas/ComputationStepPackage'
     ComputationApplication:
       type: object
       required:
