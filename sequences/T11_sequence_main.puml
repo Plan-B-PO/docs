@@ -1,0 +1,24 @@
+@startuml
+
+skinparam monochrome true
+
+actor Administrator
+participant "Machine Manager UI" as ManagementUI
+
+'''''''''''''''''''
+'ACTIVATE TRIGGER
+
+Administrator ->> ManagementUI : onShowCNList()
+activate ManagementUI
+
+ManagementUI -> Machines : GET /machine-manager​/management​/machines
+activate Machines
+
+Machines -> Machines : getAllMachines()
+Machines  -->> ManagementUI : 200, :List<Machine>
+deactivate Machines
+
+ManagementUI -> ManagementUI : showCNList()
+deactivate ManagementUI
+
+@enduml

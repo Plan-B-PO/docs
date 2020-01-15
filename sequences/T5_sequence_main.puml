@@ -1,0 +1,47 @@
+@startuml
+
+skinparam monochrome true
+
+actor User
+
+'''''''''''''''''''
+'ACTIVATE TRIGGER
+
+User ->> LauncherUI : onAbortTask(computationId)
+activate LauncherUI
+
+LauncherUI ->> Launcher : DELETE /launcher​/app-user​/computations​/{computationId}
+deactivate LauncherUI
+activate Launcher
+
+Launcher -> Computations : DELETE /machine-manager/launcher/computations/{computationId}
+activate Computations
+
+Computations -> Machines : getMachineByComputationId(:computationId)
+activate Machines
+Machines -->> Computations : :Optional<Machine>
+deactivate Machines
+
+Computations -> Machines : abortComputationTask(computationId, :Machine)
+activate Machines
+
+''''''''''''''''''
+' COMPUTATION
+
+Machines -> Machine : DELETE /machine/computation/{computationId}
+activate Machine
+
+Machine -> Machine : abortComputation(:computationId)
+Machine -->> Machines : 204
+deactivate Machine
+
+Machines -->> Computations
+deactivate Machines
+
+Computations -->> Launcher : 202
+deactivate Computations
+
+Launcher ->> LauncherUI : refreshCockpit()
+deactivate Launcher
+
+@enduml

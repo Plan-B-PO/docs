@@ -1,0 +1,74 @@
+@startuml
+
+skinparam monochrome true
+
+actor User
+
+'''''''''''''''''''
+'INITIAL SCREEN
+
+User ->> LauncherUI : onShowActivateTaskScreenClick(taskId)
+activate LauncherUI
+LauncherUI -> LauncherUI : showActivateTaskScreen(taskId)
+deactivate LauncherUI
+
+'''''''''''''''''''
+'ACTIVATE TRIGGER
+
+User ->> LauncherUI : onActivateTask(taskId)
+activate LauncherUI
+
+LauncherUI ->> Launcher : POST /launcher​/app-user​/computations
+deactivate LauncherUI
+activate Launcher
+
+Launcher -> Computations : POST /machine-manager/launcher/computations
+activate Computations
+
+Computations -> Computations : unpackComputationStepPackage(:ComputationStepPackage)
+
+Computations -> Machines : getAvailableMachines()
+activate Machines
+Machines -->> Computations : :List<Machine>
+deactivate Machines
+
+Computations -> Computations : chooseBestMachineForComputationSteps(:List<Machine>)
+Computations -> Computations : saveComputationDataToDatabase()
+
+Computations -> Machines : activateComputationTask(computationId, :Machine)
+activate Machines
+
+Computations -->> Launcher : 201, computationId
+Launcher -->> LauncherUI : showCockpit()
+deactivate Launcher
+
+''''''''''''''''''
+' COMPUTATION
+
+loop foreach ComputationStep
+
+    Machines -> Machine : POST /machine/computation/{computationId}
+    activate Machine
+
+    loop while computation is performed
+
+        par
+
+			Machine -->> Machines : POST /machine-manager/machines/status/{id}
+
+        else
+
+            Machine -->> Logger : POST /logger/machine/computation/{id}/logs
+
+        end par
+
+    end loop
+
+    deactivate Machine
+
+end loop
+
+Computations -> Computations : updateComputationFinishedInDatabase(computationId)
+deactivate Computations
+
+@enduml
