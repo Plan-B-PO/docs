@@ -66,7 +66,7 @@ ___WARUNEK SUKCESU:___
 
 ___WARUNEK SUKCESU:___
 
-- AD10. _Launcher_ wyświetla 2 logach przy "Test Task 02" wyniki pośrednie, ale nie końcowe:
+- AD10. _Launcher_ wyświetla w logach przy "Test Task 02" wyniki pośrednie, ale nie końcowe:
 
     ``` 1
         1
