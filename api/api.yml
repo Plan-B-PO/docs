@@ -510,6 +510,32 @@ paths:
         '404':
           $ref: '#/components/responses/EntityNotFoundError'
 
+  /machine-manager/machines/initial-connect:
+    post:
+      tags:
+      - machine manager
+      summary: it's used to give machine its id
+      operationId: initailConnectMachine
+      security:
+      - MachineAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MachineComputingStatus'
+      responses:
+        '301':
+          description: Metrics reported successfully
+          headers:
+            location:
+              schema:
+                type: string
+                example: /machine-manager/machines/status/46362724
+                description: url for a machine to report its status
+        '401':
+          description: Invalid token
+
   /machine-manager/machines/status/{id}:
     post:
       tags:
