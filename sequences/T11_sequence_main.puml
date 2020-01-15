@@ -2,6 +2,8 @@
 
 skinparam monochrome true
 
+actor Administrator
+participant "Machine Manager UI" as ManagementUI
 
 '''''''''''''''''''
 'ACTIVATE TRIGGER
@@ -9,13 +11,14 @@ skinparam monochrome true
 Administrator ->> ManagementUI : onShowCNList()
 activate ManagementUI
 
-ManagementUI ->> Machines : GET /machine-manager​/management​/machines
-deactivate ManagementUI
+ManagementUI -> Machines : GET /machine-manager​/management​/machines
 activate Machines
 
 Machines -> Machines : getAllMachines()
-Machines  --> ManagementUI : 200 , List<Machine>
+Machines  -->> ManagementUI : 200, :List<Machine>
+deactivate Machines
 
 ManagementUI -> ManagementUI : showCNList()
+deactivate ManagementUI
 
 @enduml

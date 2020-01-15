@@ -2,6 +2,7 @@
 
 skinparam monochrome true
 
+actor User
 
 '''''''''''''''''''
 'ACTIVATE TRIGGER
