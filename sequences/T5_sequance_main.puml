@@ -30,15 +30,17 @@ activate Machines
 Machines -> Machine : DELETE /machine/computation/{computationId}
 activate Machine
 
-Machine -->> Machine : abortComputation(:computationId)
-Machine -->> Machines : 200
+Machine -> Machine : abortComputation(:computationId)
+Machine -->> Machines : 204
 deactivate Machine
 
-Machines -->> Computations : 200
+Machines -->> Computations
 deactivate Machines
 
-Computations -->> Launcher : 200
-Launcher -->> LauncherUI : showCockpit()
+Computations -->> Launcher : 202
+deactivate Computations
+
+Launcher ->> LauncherUI : refreshCockpit()
 deactivate Launcher
 
 @enduml
