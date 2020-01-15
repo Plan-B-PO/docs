@@ -7,13 +7,11 @@ object "testApp01 : ComputationApplication" as testApp01 {
     icon = "https://static.thenounproject.com/png/1751844-200.png"
 }
 
-object ": ComputationStepPackage" as pack {
+object "pack1 : ComputationStepPackage" as pack1 {
     applicationId = <any>
     computationSteps = [step1]
     version: v1.0.0
 }
-
-testApp01 <.. pack
 
 object "step1 : ComputationStep" as step1 {
     params = []
@@ -21,7 +19,7 @@ object "step1 : ComputationStep" as step1 {
     - command
 }
 
-pack *-- step1
+pack1 *-- step1
 
 object "testTask01 : ComputationTask" as testTask01 {
     id = <any>
@@ -29,7 +27,10 @@ object "testTask01 : ComputationTask" as testTask01 {
     userId = 00001
     application = testApp01
     input = input01
+    package = pack1
 }
+
+testTask01 *-- pack1
 
 object "input01 : ComputationInput" as input01 {
     logger = null
@@ -46,13 +47,13 @@ object "testApp02 : ComputationApplication" as testApp02 {
     icon = "https://static.thenounproject.com/png/1751844-200.png"
 }
 
-object ": ComputationStepPackage" as pack2 {
+object "pack2: ComputationStepPackage" as pack2 {
     applicationId = <any>
     computationSteps = [step21, step22]
     version: v1.0.0
 }
 
-testApp02 <.. pack2
+testTask02 *-- pack2
 
 object "step21 : ComputationStep" as step21 {
     params = []
