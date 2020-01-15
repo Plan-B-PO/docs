@@ -52,11 +52,7 @@ loop foreach ComputationStep
 
         par
 
-            Machines -> Machine : GET ​/machine​/computation​/{id}
-            activate Machine
-
-            Machine -->> Machines : 200, :Computation
-            deactivate Machine
+			Machine -->> Machines : POST /machine-manager/machines/status/{id}
 
         else
 
