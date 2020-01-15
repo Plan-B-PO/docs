@@ -24,7 +24,7 @@ pack1 *-- step1
 object "testTask01 : ComputationTask" as testTask01 {
     id = <any>
     name = "Test Task 01"
-    userId = 00001
+    userId = <<userT4_1>>
     application = testApp01
     input = input01
     package = pack1
@@ -73,7 +73,7 @@ pack2 *-- step22
 object "testTask02 : ComputationTask" as testTask02 {
     id = <any>
     name = "Test Task 02"
-    userId = 00001
+    userId = <<userT4_1>>
     application = testApp02
     input = input02
 }
