@@ -554,26 +554,7 @@ paths:
                 enum: [waiting, working]
         '401':
           $ref: '#/components/responses/InvalidMachineCredentials'
-
-  /machine/computation:
-    post:
-      tags:
-      - machine
-      summary: run computation on machine
-      operationId: runMachineComputation
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/ComputationRunnable'
-      responses:
-        '201':
-          description: application ran successfully
-        '401':
-          $ref: '#/components/responses/InvalidMachineCredentials'
-
-  /machine/computation/{id}:
+  /machine/computation/{computationId}:
     get:
       tags:
       - machine
@@ -596,6 +577,22 @@ paths:
           $ref: '#/components/responses/InvalidMachineCredentials'
         '404':
           $ref: '#/components/responses/EntityNotFoundError'
+    post:
+      tags:
+      - machine
+      summary: run computation on machine
+      operationId: runMachineComputation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ComputationTask'
+      responses:
+        '200':
+          description: application ran successfully
+        '401':
+          $ref: '#/components/responses/InvalidMachineCredentials'
     delete:
       tags:
       - machine
@@ -947,21 +944,6 @@ components:
           nullable: true
           example: null
           description: default value when running app
-    ComputationRunnable:
-      type: object
-      required:
-        - id
-        - computationStep
-      properties:
-        id:
-          type: string
-          example: 24352
-        computationStep:
-          $ref: '#/components/schemas/ComputationStep'
-        topic:
-          $ref: '#/components/schemas/ComputationTopic'
-        previousTopic:
-          $ref: '#/components/schemas/ComputationTopic'
     Computation:
       type: object
       required:
