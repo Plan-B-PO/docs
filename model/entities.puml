@@ -4,6 +4,9 @@
     hide class circle
     hide class fields
     hide class methods
+    hide enum circle
+    hide enum fields
+    hide enum methods
 
     class ComputationTask
     class ComputationApplication
@@ -14,8 +17,9 @@
     class ComputationRunnable
     class ComputationTopic
     class Computation
-    class ComputationStatus
+    enum ComputationStatus
     class ComputationDetails
+    class MachineComputingStatus
     class Machine
     class MachineMetrics
     class MachineMetricValue
@@ -27,7 +31,8 @@
     ComputationApplication o-- "0..*" ComputationStepParam
     ComputationInput ..> ComputationApplication
     ComputationStepPackage *-- "1..*" ComputationStep
-    ComputationStepPackage "1" --* ComputationApplication
+    ComputationStepPackage ..> ComputationApplication
+    ComputationStepPackage "1" -do-* ComputationTask
     ComputationStep o-- "0..*" ComputationStepParam
     ComputationRunnable *-- "1" ComputationStep
     ComputationRunnable o-- ComputationTopic
@@ -35,4 +40,6 @@
     Computation *-- "1" ComputationInput
     Machine o-- MachineMetrics
     MachineMetrics o-- MachineMetricValue
+    MachineComputingStatus o-- MachineMetrics
+    MachineComputingStatus o-- "0..*" ComputationStatus
 @enduml

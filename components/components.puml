@@ -4,18 +4,14 @@ skinparam componentStyle uml2
 skinparam monochrome true
 
 actor "App User" as AU
-actor Developer as AD
 actor Supplier as AS
 actor Administrator as AA
 
 AA -le-|> AU
-AA -up-|> AD
 AA -do-|> AS
 
 component Launcher as CLa
 component "Launcher UI" as CLaU
-component Library as CLi
-component "Library UI" as CLiU
 component Logger as CLo
 component "Machine Manager" <<subsystem>> as SM {
     component "Machines" as SMCM
@@ -26,30 +22,19 @@ component "Machine Manager" <<subsystem>> as SM {
     SMCC -le-( ISMCMSMCC
 }
 component "Machine Manager UI" as CMU
-component Payments as CP
 component Machine as CMa
 component "OAuth Server" as CA
-component Queue as CQ
 
 interface "/logger/launcher/" as ICLoCLa
 interface "/logger/machine/" as ICLoCMa
 interface "/machine-manager/machines/" as ICMCMa
 interface "/machine-manager/launcher/" as ICMCLa
-interface "/library/launcher/" as ICLiCLa
-interface "/payments/launcher/" as ICPCLa
-interface "/payments/machine-manager/" as ICPCM
-interface "/library/dev/" as ICLiAD
 interface "/machine-manager/management/" as ICMAS
 interface "/launcher/app-user/" as ICLaAU
 interface "/machine/manager/" as ICMaCM
-interface "/queue/" as ICQ
 interface "/auth/" as ICA
 
 CA -do- ICA
-
-AD -le-> CLiU
-CLiU -le-( ICLiAD
-ICLiAD -le- CLi
 
 AS -up-> CMU
 CMU -up-( ICMAS
@@ -58,9 +43,6 @@ ICMAS -up- SMCM
 AU -le-> CLaU
 CLaU -le-( ICLaAU
 ICLaAU -le- CLa
-
-CLi -le- ICLiCLa
-ICLiCLa )-do- CLa
 
 CLa -do-( ICMCLa
 ICMCLa -do- SMCC
@@ -72,19 +54,8 @@ ICMaCM -do- CMa
 
 CMa <-do- AS
 
-CP -ri- ICPCLa
-ICPCLa )-ri- CLa
-
-CP -do- ICPCM
-SMCC -up-( ICPCM
-
 CLa -do-> ICLoCLa
 ICLoCLa -do- CLo
 CLo -do- ICLoCMa
 ICLoCMa <-do- CMa
-
-CQ -le- ICQ
-SMCC -do-( ICQ
-CMa -ri-( ICQ
-
 @enduml
