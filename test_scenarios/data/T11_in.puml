@@ -1,0 +1,19 @@
+@startuml
+
+object "testMachine01 : Machine" as testMachine01 {
+    id = <any>
+    name = "Test Machine 13_1"
+    supplierId = <<userT13_1>>
+    status = <any>
+    metrics = <any>
+}
+
+object "testMachine02 : Machine" as testMachine02 {
+    id = <any>
+    name = "Test Machine 13_2"
+    supplierId = <<userT13_2>>
+    status = <any>
+    metrics = <any>
+}
+
+@enduml
