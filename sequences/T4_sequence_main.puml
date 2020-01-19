@@ -37,6 +37,7 @@ Computations -> Computations : saveComputationDataToDatabase()
 
 Computations -> Machines : activateComputationTask(computationId, :Machine)
 activate Machines
+Machines -->> Computations
 
 Computations -->> Launcher : 201, computationId
 Launcher -->> LauncherUI : showCockpit()
@@ -45,28 +46,30 @@ deactivate Launcher
 ''''''''''''''''''
 ' COMPUTATION
 
-loop foreach ComputationStep
+Machines -> Machine : POST /machine/computation/{computationId}
+activate Machine
 
-    Machines -> Machine : POST /machine/computation/{computationId}
-    activate Machine
+loop while computation is performed
 
-    loop while computation is performed
+    par
 
-        par
+        Machine -->> Machines : POST /machine-manager/machines/status/{id}
 
-			Machine -->> Machines : POST /machine-manager/machines/status/{id}
+    else
 
-        else
+        Machine -->> Logger : POST /logger/machine/computation/{id}/logs
 
-            Machine -->> Logger : POST /logger/machine/computation/{id}/logs
-
-        end par
-
-    end loop
-
-    deactivate Machine
+    end par
 
 end loop
+
+deactivate Machine
+
+' TOO LATE TO REQUIRE THE IMPLEMENTATION OF THIS
+'Machines -> Computations : markComputationFinished(computationId)
+'Computations -->> Machines
+
+deactivate Machines
 
 Computations -> Computations : updateComputationFinishedInDatabase(computationId)
 deactivate Computations
