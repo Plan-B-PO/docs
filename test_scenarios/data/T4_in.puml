@@ -3,39 +3,88 @@
 object "testApp01 : ComputationApplication" as testApp01 {
     id = <any>
     name = "Test App 01"
-    description = "OK test app"
-    icon = "http://www.todayifoundout.com/wp-content/uploads/2010/04/ok.gif"
+    description = "Fibonacci element"
+    icon = "https://static.thenounproject.com/png/1751844-200.png"
 }
 
-object ": ComputationStepPackage" as pack {
+object "pack1 : ComputationStepPackage" as pack1 {
     applicationId = <any>
-    computationSteps = [step]
+    computationSteps = [step1]
     version: v1.0.0
 }
 
-testApp01 <. pack
-
-object "step : ComputationStep" as step {
+object "step1 : ComputationStep" as step1 {
     params = []
-    artifactUrl = <any app working longer than 5min>>
+    artifactUrl = <<app counting phi(n)>>
     - command
 }
 
-pack *- step
+pack1 *-- step1
 
 object "testTask01 : ComputationTask" as testTask01 {
     id = <any>
     name = "Test Task 01"
-    userId = 00001
+    userId = <<userT4_1>>
     application = testApp01
     input = input01
+    package = pack1
 }
+
+testTask01 *-- pack1
 
 object "input01 : ComputationInput" as input01 {
     logger = null
+    n = 20
 }
 
 testApp01 --o testTask01
 testTask01 o-- input01
+
+object "testApp02 : ComputationApplication" as testApp02 {
+    id = <any>
+    name = "Test App 02"
+    description = "Fibonnacci sum"
+    icon = "https://static.thenounproject.com/png/1751844-200.png"
+}
+
+object "pack2: ComputationStepPackage" as pack2 {
+    applicationId = <any>
+    computationSteps = [step21, step22]
+    version: v1.0.0
+}
+
+testTask02 *-- pack2
+
+object "step21 : ComputationStep" as step21 {
+    params = []
+    artifactUrl = <<app counting phi sequence from 1 to n and saving it to file>>
+    - command
+}
+
+object "step22 : ComputationStep" as step22 {
+    params = []
+    artifactUrl = <<app counting sum of the series saved in a file>>
+    - command
+}
+
+pack2 *-- step21
+pack2 *-- step22
+
+object "testTask02 : ComputationTask" as testTask02 {
+    id = <any>
+    name = "Test Task 02"
+    userId = <<userT4_1>>
+    application = testApp02
+    input = input02
+}
+
+object "input02 : ComputationInput" as input02 {
+    logger = null
+    n = 20
+}
+
+testApp02 --o testTask02
+testTask02 o-- input02
+
 
 @enduml
