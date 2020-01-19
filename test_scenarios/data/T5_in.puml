@@ -1,80 +1,84 @@
 @startuml
 
-object "testApp03 : ComputationApplication" as testApp03 {
-    id = 10003
-    name = "Test App 03"
-    description = "Loop test app"
-    icon = "https://blog.hubspot.com/hs-fs/hub/53/file-23117129-png/blog/images/closed-loop-marketing.png"
+object "testTask03 : ComputationTask" as testTask03 {
+    id = <any>
+    name = "Test Task 03"
+    userId = <userT5_1>
+    application = <any>
+    input = <any>
+    package = <any>
 }
 
-object ": ComputationStepPackage" as pack {
-    applicationId = 10003
-    computationSteps = [step]
+object "testTask04 : ComputationTask" as testTask04 {
+    id = <any>
+    name = "Test Task 04"
+    userId = <userT5_1>
+    application = testApp04
+    input = <any>
+    package = pack4
+}
+
+object "testTask05 : ComputationTask" as testTask05 {
+    id = <any>
+    name = "Test Task 05"
+    userId = <userT5_1>
+    application = testApp05
+    input = <any>
+    package = pack5
+}
+
+object "testApp04 : ComputationApplication" as testApp04 {
+    id = <any>
+    name = "Test App 04"
+    description = <any>
+    icon = <any>
+}
+
+object "pack4 : ComputationStepPackage" as pack4 {
+    applicationId = <any>
+    computationSteps = [step41]
     version: v1.0.0
 }
 
-testApp03 <. pack
+testTask04 *-- pack4
+testTask04 *-- testApp04
 
-object "step : ComputationStep" as step {
-    params = []
-    artifactUrl = <<app with an infinite loop>>
+object "step41 : ComputationStep" as step41 {
+    params = <any>
+    artifactUrl = <any app working in loop>>
     - command
 }
 
-pack *. step
-
-object "testTask03 : ComputationTask" as testTask03 {
-    id = 20003
-    name = "Test Task 03"
-    userId = 00001
-    application = testApp03
-    input = input03
+object "testApp05 : ComputationApplication" as testApp05 {
+    id = <any>
+    name = "Test App 05"
+    description = <any>
+    icon = <any>
 }
 
-object "input03 : ComputationInput" as input03 {
-    logger = null
+object "pack5 : ComputationStepPackage" as pack5 {
+    applicationId = <any>
+    computationSteps = [step51, step52]
+    version: v1.0.0
 }
 
-testApp03 --o testTask03
-testTask03 o-- input03
-
-object "testTask04 : ComputationTask" as testTask04 {
-    id = 20004
-    name = "Test Task 04"
-    userId = 00001
-    application = testApp03
-    input = input04
+object "step51 : ComputationStep" as step51 {
+    params = <any>
+    artifactUrl = <<any finite app>>
+    - command
 }
 
-object "input04 : ComputationInput" as input04 {
-    logger = null
+object "step52 : ComputationStep" as step52 {
+    params = <any>
+    artifactUrl = <<any app working in loop>>
+    - command
 }
 
-testApp03 --o testTask04
-testTask04 o-- input04
+pack4 *-- step41
+testTask05 *-- pack5
+testTask05 *-- testApp05
 
-object "computation04 : Computation" as computation04 {
-    id = 30004
-    runnable = computation04Runnable
-    input = computation04Input
-}
-
-object "computation04Runnable : ComputationStepPackage" as computation04Runnable
-
-pack <|-- computation04Runnable
-computation04Runnable --* computation04
-
-input04 -* computation04
-
-object "runningStep : computation04Runnable" as runningStep
-
-computation04Runnable *- runningStep
-
-object "directRunning : ComputationRunnable" as directRunning {
-    - id
-    computationStep = runningStep
-}
-
-runningStep --* directRunning
+pack5 *-- step51
+pack5 *-- step52
 
 @enduml

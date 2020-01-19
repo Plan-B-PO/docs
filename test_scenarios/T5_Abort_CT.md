@@ -12,7 +12,10 @@
 
 ### Warunki początkowe 
 
-- Zalogowany __App User__ to _user01_.
+- Zalogowany __App User__ to _userT5_1_.
+- `Test Task 03` nie jest uruchomiony
+- `Test Task 04` jest uruchomiony i zapętlony \[status = IN_PROGRESS\]
+- `Test Task 05` jest uruchomiony i zapętlony na drugim etapie \[status = IN_PROGRESS\]
 
 ### Przypadki testowe
 
@@ -23,6 +26,7 @@
     ```
     - "Test Task 03"
     - "Test Task 04"
+    - "Test Task 05"
     ```
 3. __App User__ wybiera opcję "Abort" przy "Test Task 04". 
 4. System wyświetla okno potwierdzenia, z pytaniem 
@@ -40,6 +44,7 @@ ___WARUNEK SUKCESU:___
 2. System wyświetla listę nazw zdefiniowanych CT 
     - `"Test Task 03"`
     - `"Test Task 04"`
+    - `"Test Task 05"`
 3. __App User__ wybiera opcję "Abort" przy "Test Task 03". 
 4. System wyświetla okno potwierdzenia, z pytaniem 
    "Are you sure, you want to abort "Test Task 03"?"
@@ -57,6 +62,7 @@ ___WARUNEK SUKCESU:___
 2. System wyświetla listę nazw zdefiniowanych CT 
     - `"Test Task 03"`
     - `"Test Task 04"`
+    - `"Test Task 05"`
 3. __App User__ wybiera opcję "Abort" przy "Test Task 04". 
 4. System wyświetla okno potwierdzenia, z pytaniem 
    "Are you sure, you want to abort "Test Task 04"?"
@@ -66,5 +72,23 @@ ___WARUNEK SUKCESU:___
 
 ___WARUNEK SUKCESU:___
 
-- directRunning zostaje usunięte
-- Działająca aplikacja na maszynie sprzężona z directRunning zostaje zatrzymana
+- _Launcher_ wyświetla status "CANCELED" przy "Test Task 04".
+
+
+#### 4. Anulowanie zapętlonego dwuetapowego tasku.
+
+1. __App User__ wybiera opcję wyświetlenia zdefiniowanych CT
+2. System wyświetla listę nazw zdefiniowanych CT 
+    - `"Test Task 03"`
+    - `"Test Task 04"`
+    - `"Test Task 05"`
+3. __App User__ wybiera opcję "Abort" przy "Test Task 05". 
+4. System wyświetla okno potwierdzenia, z pytaniem 
+   "Are you sure, you want to abort "Test Task 05"?"
+5. __App User__ wybiera opcję "YES"
+6. System wyświetla informację o poprawnym anulowaniu "Test Task 05".
+7. __App User__ wybiera opcję "OK"
+
+___WARUNEK SUKCESU:___
+
+- _Launcher_ wyświetla status "CANCELED" przy "Test Task 05".
