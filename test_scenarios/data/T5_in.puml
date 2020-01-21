@@ -64,13 +64,13 @@ object "pack5 : ComputationStepPackage" as pack5 {
 
 object "step51 : ComputationStep" as step51 {
     params = <any>
-    artifactUrl = <<any finite app>>
+    artifactUrl = <<any app working in loop>>
     - command
 }
 
 object "step52 : ComputationStep" as step52 {
     params = <any>
-    artifactUrl = <<any app working in loop>>
+    artifactUrl = <<any finite app>>
     - command
 }
 

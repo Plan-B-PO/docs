@@ -15,7 +15,7 @@
 - Zalogowany __App User__ to _userT5_1_.
 - `Test Task 03` nie jest uruchomiony
 - `Test Task 04` jest uruchomiony i zapętlony \[status = IN_PROGRESS\]
-- `Test Task 05` jest uruchomiony i zapętlony na drugim etapie \[status = IN_PROGRESS\]
+- `Test Task 05` jest uruchomiony i zapętlony na pierwszym etapie \[status = IN_PROGRESS\]
 
 ### Przypadki testowe
 
