@@ -59,7 +59,7 @@ ___WARUNEK SUKCESU:___
 6. _Launcher_ wyświetla informację o poprawnym uruchomieniu CT "Test Task 01".
 7. __App User__ wybiera opcję "OK"
 8. _Launcher_ wyświetla widok CT "Test Task 01" ze statusem "IN_PROGRESS"
-9. __App User__ wybiera opcję "Refresh logs" po około 40 sekundach
+9. __App User__ klika przycisk odświeżania logów po około 40 sekundach
 10. _Launcher_ wyświetla log z aktualną godziną. 
 
 ___WARUNEK SUKCESU:___
@@ -85,9 +85,9 @@ ___WARUNEK SUKCESU:___
 6. _Launcher_ wyświetla informację o poprawnym uruchomieniu CT "Test Task 02".
 7. __App User__ wybiera opcję "OK"
 8. _Launcher_ wyświetla widok CT "Test Task 02" ze statusem "IN_PROGRESS"
-9. __App User__ wybiera opcję "Refresh logs" po około 40 sekundach
+9. __App User__ klika przycisk odświeżania logów po około 40 sekundach
 10. _Launcher_ wyświetla log z aktualną godziną. 
-11. __App User__ wybiera opcję "Refresh logs" po około 40 sekundach
+11. __App User__ klika przycisk odświeżania logów po około 40 sekundach
 12. _Launcher_ wyświetla log z aktualną godziną. 
 
 ___WARUNEK SUKCESU:___
