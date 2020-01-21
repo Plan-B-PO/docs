@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="383px" preserveAspectRatio="none" style="width:1115px;height:383px;" version="1.1" viewBox="0 0 1115 383" width="1115px" zoomAndPan="magnify"><defs><filter height="300%" id="f1m1ztyal0po6r" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#FEFECE" filter="url(#f1m1ztyal0po6r)" height="102.5625" style="stroke: #A80036; stroke-width: 1.5;" width="182" x="6" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="168" x="13" y="22.457">testTask03 : ComputationTask</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="187" y1="27.0938" y2="27.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="50" x="12" y="41.4746">id = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="106" x="12" y="54.0527">name = "Test Task 03"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="96" x="12" y="66.6309">userId = &lt;userT5_1&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="95" x="12" y="79.209">application = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="65" x="12" y="91.7871">input = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="81" x="12" y="104.3652">package = &lt;any&gt;</text><rect fill="#FEFECE" filter="url(#f1m1ztyal0po6r)" height="102.5625" style="stroke: #A80036; stroke-width: 1.5;" width="182" x="223" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="168" x="230" y="22.457">testTask04 : ComputationTask</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="224" x2="404" y1="27.0938" y2="27.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="50" x="229" y="41.4746">id = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="106" x="229" y="54.0527">name = "Test Task 04"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="96" x="229" y="66.6309">userId = &lt;userT5_1&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="113" x="229" y="79.209">application = testApp04</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="65" x="229" y="91.7871">input = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="80" x="229" y="104.3652">package = pack4</text><rect fill="#FEFECE" filter="url(#f1m1ztyal0po6r)" height="102.5625" style="stroke: #A80036; stroke-width: 1.5;" width="182" x="703" y="8"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="168" x="710" y="22.457">testTask05 : ComputationTask</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="704" x2="884" y1="27.0938" y2="27.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="50" x="709" y="41.4746">id = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="106" x="709" y="54.0527">name = "Test Task 05"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="96" x="709" y="66.6309">userId = &lt;userT5_1&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="113" x="709" y="79.209">application = testApp05</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="65" x="709" y="91.7871">input = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="80" x="709" y="104.3652">package = pack5</text><rect fill="#FEFECE" filter="url(#f1m1ztyal0po6r)" height="77.4063" style="stroke: #A80036; stroke-width: 1.5;" width="209" x="89.5" y="171"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="195" x="96.5" y="185.457">testApp04 : ComputationApplication</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="90.5" x2="297.5" y1="190.0938" y2="190.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="50" x="95.5" y="204.4746">id = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="95.5" y="217.0527">name = "Test App 04"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="93" x="95.5" y="229.6309">description = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="62" x="95.5" y="242.209">icon = &lt;any&gt;</text><rect fill="#FEFECE" filter="url(#f1m1ztyal0po6r)" height="64.8281" style="stroke: #A80036; stroke-width: 1.5;" width="200" x="334" y="177"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="186" x="341" y="191.457">pack4 : ComputationStepPackage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="335" x2="533" y1="196.0938" y2="196.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="340" y="210.4746">applicationId = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="135" x="340" y="223.0527">computationSteps = [step41]</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="68" x="340" y="235.6309">version: v1.0.0</text><rect fill="#FEFECE" filter="url(#f1m1ztyal0po6r)" height="64.8281" style="stroke: #A80036; stroke-width: 1.5;" width="214" x="327" y="308"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="143" x="362.5" y="322.457">step41 : ComputationStep</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="328" x2="540" y1="327.0938" y2="327.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="75" x="347" y="341.4746">params = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="188" x="347" y="354.0527">artifactUrl = &lt;any app working in loop&gt;&gt;</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="335" y="361.0391"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="48" x="347" y="366.6309">command</text><rect fill="#FEFECE" filter="url(#f1m1ztyal0po6r)" height="77.4063" style="stroke: #A80036; stroke-width: 1.5;" width="209" x="569.5" y="171"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="195" x="576.5" y="185.457">testApp05 : ComputationApplication</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="570.5" x2="777.5" y1="190.0938" y2="190.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="50" x="575.5" y="204.4746">id = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="575.5" y="217.0527">name = "Test App 05"</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="93" x="575.5" y="229.6309">description = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="62" x="575.5" y="242.209">icon = &lt;any&gt;</text><rect fill="#FEFECE" filter="url(#f1m1ztyal0po6r)" height="64.8281" style="stroke: #A80036; stroke-width: 1.5;" width="200" x="814" y="177"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="186" x="821" y="191.457">pack5 : ComputationStepPackage</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="815" x2="1013" y1="196.0938" y2="196.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="104" x="820" y="210.4746">applicationId = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="172" x="820" y="223.0527">computationSteps = [step51, step52]</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="68" x="820" y="235.6309">version: v1.0.0</text><rect fill="#FEFECE" filter="url(#f1m1ztyal0po6r)" height="64.8281" style="stroke: #A80036; stroke-width: 1.5;" width="208" x="700" y="308"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="143" x="732.5" y="322.457">step51 : ComputationStep</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="701" x2="907" y1="327.0938" y2="327.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="75" x="720" y="341.4746">params = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="182" x="720" y="354.0527">artifactUrl = «any app working in loop»</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="708" y="361.0391"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="48" x="720" y="366.6309">command</text><rect fill="#FEFECE" filter="url(#f1m1ztyal0po6r)" height="64.8281" style="stroke: #A80036; stroke-width: 1.5;" width="161" x="943.5" y="308"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="143" x="952.5" y="322.457">step52 : ComputationStep</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="944.5" x2="1103.5" y1="327.0938" y2="327.0938"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="75" x="963.5" y="341.4746">params = &lt;any&gt;</text><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="135" x="963.5" y="354.0527">artifactUrl = «any finite app»</text><rect fill="none" height="6" style="stroke: #C82930; stroke-width: 1.0;" width="6" x="951.5" y="361.0391"/><text fill="#000000" font-family="sans-serif" font-size="10" lengthAdjust="spacingAndGlyphs" textLength="48" x="963.5" y="366.6309">command</text><!--link testTask04 to pack4--><path d="M363.175,121.15 C378.634,140.216 395.084,160.504 408.236,176.725 " fill="none" id="testTask04-pack4" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="354.962,111.019,355.6345,118.1987,362.5206,120.3393,361.8481,113.1596,354.962,111.019" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testTask04 to testApp04--><path d="M264.696,121.308 C251.099,138.078 236.745,155.781 224.549,170.823 " fill="none" id="testTask04-testApp04" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="273.038,111.019,266.1519,113.1596,265.4794,120.3393,272.3655,118.1987,273.038,111.019" style="stroke: #A80036; stroke-width: 1.0;"/><!--link pack4 to step41--><path d="M434,255.113 C434,272.468 434,291.9517 434,307.8217 " fill="none" id="pack4-step41" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="434,242.057,430,248.057,434,254.057,438,248.057,434,242.057" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testTask05 to pack5--><path d="M843.175,121.15 C858.634,140.216 875.084,160.504 888.236,176.725 " fill="none" id="testTask05-pack5" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="834.962,111.019,835.6345,118.1987,842.5206,120.3393,841.8481,113.1596,834.962,111.019" style="stroke: #A80036; stroke-width: 1.0;"/><!--link testTask05 to testApp05--><path d="M744.696,121.308 C731.099,138.078 716.745,155.781 704.549,170.823 " fill="none" id="testTask05-testApp05" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="753.038,111.019,746.1519,113.1596,745.4794,120.3393,752.3655,118.1987,753.038,111.019" style="stroke: #A80036; stroke-width: 1.0;"/><!--link pack5 to step51--><path d="M878.563,252.058 C863.135,270.151 845.345,291.0135 831.012,307.8217 " fill="none" id="pack5-step51" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="887.091,242.057,880.1543,244.0272,879.305,251.1882,886.2417,249.2179,887.091,242.057" style="stroke: #A80036; stroke-width: 1.0;"/><!--link pack5 to step52--><path d="M949.437,252.058 C964.865,270.151 982.655,291.0135 996.988,307.8217 " fill="none" id="pack5-step52" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="940.909,242.057,941.7583,249.2179,948.695,251.1882,947.8457,244.0272,940.909,242.057" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+@startuml
+
+object "testTask03 : ComputationTask" as testTask03 {
+    id = <any>
+    name = "Test Task 03"
+    userId = <userT5_1>
+    application = <any>
+    input = <any>
+    package = <any>
+}
+
+object "testTask04 : ComputationTask" as testTask04 {
+    id = <any>
+    name = "Test Task 04"
+    userId = <userT5_1>
+    application = testApp04
+    input = <any>
+    package = pack4
+}
+
+object "testTask05 : ComputationTask" as testTask05 {
+    id = <any>
+    name = "Test Task 05"
+    userId = <userT5_1>
+    application = testApp05
+    input = <any>
+    package = pack5
+}
+
+object "testApp04 : ComputationApplication" as testApp04 {
+    id = <any>
+    name = "Test App 04"
+    description = <any>
+    icon = <any>
+}
+
+object "pack4 : ComputationStepPackage" as pack4 {
+    applicationId = <any>
+    computationSteps = [step41]
+    version: v1.0.0
+}
+
+testTask04 *- - pack4
+testTask04 *- - testApp04
+
+object "step41 : ComputationStep" as step41 {
+    params = <any>
+    artifactUrl = <any app working in loop>>
+    - command
+}
+
+object "testApp05 : ComputationApplication" as testApp05 {
+    id = <any>
+    name = "Test App 05"
+    description = <any>
+    icon = <any>
+}
+
+object "pack5 : ComputationStepPackage" as pack5 {
+    applicationId = <any>
+    computationSteps = [step51, step52]
+    version: v1.0.0
+}
+
+object "step51 : ComputationStep" as step51 {
+    params = <any>
+    artifactUrl = <<any app working in loop>>
+    - command
+}
+
+object "step52 : ComputationStep" as step52 {
+    params = <any>
+    artifactUrl = <<any finite app>>
+    - command
+}
+
+pack4 *- - step41
+testTask05 *- - pack5
+testTask05 *- - testApp05
+
+pack5 *- - step51
+pack5 *- - step52
+
+@enduml
+
+PlantUML version 1.2018.11(Sat Sep 22 18:43:53 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 1.8.0_152-release-1248-b8
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1250
+Language: pl
+Country: PL
+--></g></svg>
