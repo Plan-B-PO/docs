@@ -14,7 +14,7 @@ __WARUNKI POCZĄTKOWE:__
 
 #### 1. Pomyślne wyświetlenie listy wszystkich maszyn.
 
-1. __adminT13_1__ wybiera opcję wyświetlenia wszystkich CN
+1. __adminT13_1__ wybiera opcję wyświetlenia CN
 2. System wyświetla tabelę posiadanych CN - pokazując ich nazwy, statusy oraz właścicieli
     ```json
     [{
